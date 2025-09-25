@@ -1,35 +1,189 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Dr. B. Mouli Chandra</title>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dr. Your Name — Personal Website</title>
+  <style>
+    /* ----- Basic layout and typography ----- */
+    :root{--accent:#0b5fa5;--bg:#ffffff;--text:#111}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans",sans-serif;line-height:1.5;margin:0;color:var(--text);background:var(--bg)}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    /* ----- Top navigation (horizontal) ----- */
+    header{position:fixed;top:0;left:0;right:0;background:#fff;box-shadow:0 1px 6px rgba(0,0,0,.08);z-index:100}
+    .nav-container{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px}
+    .brand{font-weight:700;font-size:18px}
+    nav ul{margin:0;padding:0;list-style:none;display:flex;gap:18px}
+    nav li{padding:6px 4px}
+    nav a{font-weight:600}
+
+    /* ----- Main content ----- */
+    main{max-width:1100px;margin:110px auto 60px;padding:18px}
+    .hero{display:flex;gap:22px;align-items:center}
+    .profile-photo{width:120px;height:120px;border-radius:8px;object-fit:cover;background:#eee}
+    .title{font-size:22px;font-weight:700;margin:0}
+    .subtitle{margin:4px 0 0;color:#444}
+
+    /* ----- Section styling ----- */
+    section{margin-top:40px}
+    h2{font-size:20px;margin:0 0 12px}
+    ul.publications, ul.events{margin:0 0 0 20px}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .card{padding:12px;border-radius:8px;background:#fafafa;border:1px solid #f0f0f0}
+
+    /* ----- Footer ----- */
+    footer{max-width:1100px;margin:30px auto;padding:18px;color:#555}
+
+    /* ----- Responsive ----- */
+    @media (max-width:720px){
+      .hero{flex-direction:column;align-items:flex-start}
+      .two-col{grid-template-columns:1fr}
+      nav ul{gap:10px;flex-wrap:wrap}
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My Personal Website</h1>
-  <p><b>Dr. B. Mouli Chandra</b><br>
-  Dean - Development of Product Ecosystems <br>
-  Professor & Head, EEE Dept, QIS College of Engineering & Technology</p>
+  <header>
+    <div class="nav-container">
+      <div class="brand">Dr. Your Name</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#teaching">Teaching</a></li>
+          <li><a href="#students">Students</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <h2>About Me</h2>
-  <p>My research interests include Power Electronics, FACTS, FPGA Controllers, and Renewable Energy Systems.</p>
-  <p><a href="cv.pdf">Download My CV</a></p>
+  <main>
+    <!-- HOME / HERO -->
+    <section id="home" class="hero">
+      <img src="images/profile.jpg" alt="Profile photo" class="profile-photo"/>
+      <div>
+        <h1 class="title">Dr. Your Name</h1>
+        <div class="subtitle">Dean - Development of Product Ecosystems<br>Professor & Head, EEE Dept, QIS College of Engineering & Technology</div>
+        <p style="margin-top:12px">Research interests: Power Electronics, FACTS, FPGA Controllers, Renewable Energy Systems.</p>
+        <p><a href="cv.pdf" download>Download my CV (PDF)</a></p>
+      </div>
+    </section>
 
-  <h2>Research Publications</h2>
-  <ul>
-    <li><a href="papers/paper1.pdf">Paper Title 1</a></li>
-    <li><a href="papers/paper2.pdf">Paper Title 2</a></li>
-  </ul>
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Short paragraph about your research focus, teaching philosophy, and current role. Replace this text with a 2–4 sentence summary that visitors can read quickly.</p>
+    </section>
 
-  <h2>Events Organised</h2>
-  <ul>
-    <li>Workshop on Electric Vehicles, 2024</li>
-    <li>FDP on Power Electronics, 2023</li>
-  </ul>
+    <!-- RESEARCH -->
+    <section id="research">
+      <h2>Research</h2>
+      <div class="two-col">
+        <div class="card">
+          <h3>Current Projects</h3>
+          <ul>
+            <li>Product ecosystem for small UAVs (Drone platform)</li>
+            <li>FPGA-based controllers for FACTS devices</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Research Interests</h3>
+          <p>Power Electronics, FACTS, FPGA Controllers, Renewable Energy Systems, EVs.</p>
+        </div>
+      </div>
+    </section>
 
-  <h2>Contact</h2>
-  <p>Email: yourmail@example.com</p>
-  <p>
-    <a href="https://scholar.google.com">Google Scholar</a> |
-    <a href="https://orcid.org">ORCID</a> |
-    <a href="https://www.linkedin.com">LinkedIn</a>
-  </p>
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <h2>Selected Publications</h2>
+      <ul class="publications">
+        <li>Balapanur M. C., Kondaveeti S. L. T. (2019). Performance analysis improved hybrid DSTATCOM topology. Journal Name, 11(6), 130–135. <a href="#">[PDF]</a></li>
+        <li>R, P., Shajin, F. H., Balapanur, M. C., Kommula, B. N. (2021). Energy management of PV aided EV. Energy Sources Part A. <a href="#">[Link]</a></li>
+      </ul>
+      <p style="margin-top:8px"><em>Tip:</em> Keep a concise list here. For a full list you can link to a separate page or a Google Scholar export.</p>
+    </section>
+
+    <!-- TEACHING -->
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <div class="card">
+        <h3>Courses Taught</h3>
+        <ul>
+          <li>Power Electronics (UG & PG)</li>
+          <li>Renewable Energy Systems</li>
+          <li>Control Systems Lab</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- STUDENTS -->
+    <section id="students">
+      <h2>Students & Supervision</h2>
+      <p>List current PhD / M.Tech students and their topics. Example:</p>
+      <ul>
+        <li>John Doe — FPGA controllers for D-STATCOM (PhD, 2024–)</li>
+        <li>Jane Smith — EV energy management (M.Tech, 2023–2024)</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects & Grants</h2>
+      <ul>
+        <li>Funded Project: Development of drone prototype for precision agriculture — Funding Agency, Amount, Duration.</li>
+        <li>Consultancy: Power systems stability study — Industry Partner.</li>
+      </ul>
+    </section>
+
+    <!-- EVENTS & TALKS -->
+    <section id="events">
+      <h2>Events & Talks</h2>
+      <ul class="events">
+        <li>Workshop on Electric Vehicles, 2024</li>
+        <li>FDP on Power Electronics, 2023</li>
+      </ul>
+    </section>
+
+    <!-- OTHER SECTIONS: AWARDS, PATENTS, MEDIA, SOFTWARE -->
+    <section id="other">
+      <h2>Other</h2>
+      <div class="two-col">
+        <div>
+          <h3>Awards & Honors</h3>
+          <ul>
+            <li>Best Paper Award — Conference Name, Year</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Software & Datasets</h3>
+          <p>Links to code repositories and datasets (e.g., GitHub) go here.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:yourmail@example.com">yourmail@example.com</a></p>
+      <p>Links: <a href="#">Google Scholar</a> | <a href="#">ORCID</a> | <a href="#">LinkedIn</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Dr. Your Name — Website built with a simple HTML template. Replace content and images in the <code>index.html</code> file.</p>
+  </footer>
+
+  <script>
+    // Small JS to auto-fill current year and add notes for quick editing
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
