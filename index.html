@@ -45,37 +45,80 @@
     .main{
       flex:1; padding:40px; max-width:1100px; margin:0 auto;
     }
-    .profile-card{
-      background:var(--ribbon1); color:#fff;
-      border-radius:14px;
-      padding:24px;
-      box-shadow:0 6px 18px rgba(0,0,0,.25);
-      text-align:center;
-    }
-    .profile-card .avatar{
-      width:120px; height:120px; border-radius:50%;
-      border:4px solid #fff; margin:0 auto 16px;
-      overflow:hidden; box-shadow:0 6px 18px rgba(0,0,0,.25);
-    }
-    .profile-card .avatar img{width:100%; height:100%; object-fit:cover;}
-    .profile-card h2{margin:8px 0 6px 0;}
-    .profile-card p{margin:6px 0;}
-    .profile-card .research{font-size:14px; font-style:italic; line-height:1.5;}
-    .cv-btn{
-      display:inline-block; background:#fff; color:var(--ribbon1);
-      padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:700;
-      margin-top:14px; box-shadow:0 3px 8px rgba(0,0,0,.15);
-    }
-    .cv-btn:hover{background:#e6e6e6;}
 
-    /* THOUGHTFUL MESSAGE */
+    /* Profile card: two columns (left: avatar+details, right: education image + quote) */
+    .profile-card{
+      background:var(--card);
+      border-radius:14px;
+      padding:18px;
+      box-shadow:0 6px 18px rgba(0,0,0,.08);
+      display:grid;
+      grid-template-columns: 360px 1fr;
+      gap:20px;
+      align-items:center;
+      overflow:hidden;
+    }
+
+    /* left column: avatar + name/details */
+    .left-col{
+      display:flex; gap:16px; align-items:center;
+    }
+    .avatar{
+      width:120px; height:120px; border-radius:50%;
+      border:4px solid var(--ribbon1); overflow:hidden;
+      box-shadow:0 8px 20px rgba(4,58,99,.12);
+      flex:0 0 120px;
+    }
+    .avatar img{width:100%; height:100%; object-fit:cover;}
+    .details h2{margin:0 0 6px 0; color:var(--ribbon1); font-size:20px;}
+    .details .role{margin:0; font-weight:700; color:#333;}
+    .details .dept{margin:6px 0; color:var(--muted); font-size:14px;}
+    .details .research{font-size:13px; color:var(--muted); margin-top:6px;}
+    .cv-btn{
+      display:inline-block; background:var(--ribbon1); color:#fff;
+      padding:8px 14px; border-radius:8px; text-decoration:none; font-weight:700;
+      margin-top:12px; box-shadow:0 3px 8px rgba(4,58,99,.12);
+    }
+    .cv-btn:hover{filter:brightness(.95);}
+
+    /* right column: education image + quote */
+    .right-col{
+      display:flex; align-items:center; gap:16px;
+      padding:12px 6px;
+      background: linear-gradient(180deg, rgba(11,102,168,0.04), rgba(4,58,99,0.02));
+      border-radius:10px;
+    }
+    .edu-thumb{
+      width:150px; height:110px; border-radius:8px; overflow:hidden;
+      flex:0 0 150px; box-shadow:0 8px 18px rgba(4,58,99,.08);
+      background: #eef6fb;
+    }
+    .edu-thumb img{width:100%; height:100%; object-fit:cover;}
+    .quote{
+      font-style:italic; color:var(--ribbon1);
+    }
+    .quote p{margin:0 0 6px 0; font-size:15px; color:var(--ribbon1);}
+    .quote small{color:var(--muted); font-weight:700;}
+
+    /* THOUGHTFUL MESSAGE under profile-card */
     .thought{
-      margin-top:40px; padding:24px;
+      margin-top:24px; padding:20px;
       background:var(--card); border-left:6px solid var(--ribbon2);
-      border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,.08);
+      border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,.06);
     }
     .thought h3{margin-top:0; color:var(--ribbon1);}
     .thought p{font-size:15px; color:var(--muted); line-height:1.6;}
+
+    /* RESPONSIVE */
+    @media (max-width:960px){
+      .profile-card{grid-template-columns:1fr; padding:14px;}
+      .left-col{flex-direction:row; align-items:center;}
+      .right-col{margin-top:8px;}
+    }
+    @media (max-width:520px){
+      .avatar{width:90px;height:90px;flex:0 0 90px;}
+      .edu-thumb{width:120px;height:90px;flex:0 0 120px;}
+    }
   </style>
 </head>
 <body>
@@ -106,23 +149,39 @@
   <!-- MAIN DASHBOARD -->
   <main class="main">
     <div class="profile-card">
-      <div class="avatar">
-        <img src="bmc_pic-removebg-preview.png" alt="Dr. B. Mouli Chandra">
+      <!-- LEFT: avatar + details -->
+      <div class="left-col">
+        <div class="avatar">
+          <img src="bmc_pic-removebg-preview.png" alt="Dr. B. Mouli Chandra">
+        </div>
+        <div class="details">
+          <h2>Dr. (Prof.) B. Mouli Chandra</h2>
+          <p class="role">Dean – Development of Product Ecosystems</p>
+          <p class="dept">EEE Dept, QIS College of Engineering & Technology</p>
+          <p class="research">Research: Power Electronics, FACTS, FPGA Controllers, Renewable Energy, EVs, Smart Grids</p>
+          <a class="cv-btn" href="CV_Dr Mouli Chandra.pdf">Download CV (PDF)</a>
+        </div>
       </div>
-      <h2>Dr. (Prof.) B. Mouli Chandra</h2>
-      <p>Dean – Development of Product Ecosystems<br>EEE Dept, QIS College of Engineering & Technology</p>
-      <p class="research">Research: Power Electronics, FACTS, FPGA Controllers, Renewable Energy, EVs, Smart Grids</p>
-      <a class="cv-btn" href="CV_Dr Mouli Chandra.pdf">Download CV (PDF)</a>
+
+      <!-- RIGHT: education image + quote -->
+      <div class="right-col">
+        <div class="edu-thumb">
+          <!-- replace education-image.png with your image -->
+          <img src="education-image.png" alt="Education illustration">
+        </div>
+        <div class="quote">
+          <p>"Education lights the path from curiosity to creation."</p>
+          <small>— Dr. B. Mouli Chandra</small>
+        </div>
+      </div>
     </div>
 
     <div class="thought">
       <h3>My Philosophy of Education</h3>
       <p>
-        Education is not the filling of a vessel, but the kindling of a flame.  
-        I believe in shaping students into innovators, leaders, and responsible citizens 
-        who carry both technical expertise and strong values.  
-        Through knowledge, curiosity, and collaboration, we build not just successful careers, 
-        but a stronger society.
+        Education is not the filling of a vessel, but the kindling of a flame. I believe in shaping students into innovators,
+        leaders, and responsible citizens who carry both technical expertise and strong values.
+        Through knowledge, curiosity, and collaboration, we build not just successful careers, but a stronger society.
       </p>
     </div>
   </main>
