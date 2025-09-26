@@ -68,19 +68,15 @@
       <a href="index.html#contact">Contact</a>
     </nav>
   </header>
-
-  <div class="container">
-    <h1>Publications</h1>
-    <p class="lead">Click a category to view items. Proofs point to <code>docs/</code> placeholders (e.g. <code>docs/pub_001.pdf</code>). To show proofs, upload PDFs to <code>docs/</code> or update the links in the table.</p>
-
-    <div class="tabs" role="tablist" aria-label="Publication categories">
-      <div class="tab active" data-target="tab-sci-journals" role="tab">SCI / SCOPUS / WoS Journals</div>
-      <div class="tab" data-target="tab-peer-journals" role="tab">Peer Reviewed Journals</div>
-      <div class="tab" data-target="tab-sci-confs" role="tab">SCI / SCOPUS / WoS Conferences</div>
-      <div class="tab" data-target="tab-peer-confs" role="tab">Peer Reviewed Conferences</div>
-      <div class="tab" data-target="tab-patents-granted" role="tab">Patent Granted</div>
-      <div class="tab" data-target="tab-patents-published" role="tab">Patent Published</div>
-    </div>
+  <div class="tabs" role="tablist" aria-label="Publication categories">
+  <div class="tab active" data-target="tab-sci-journals" role="tab">SCI / SCOPUS / WoS Journals</div>
+  <div class="tab" data-target="tab-peer-journals" role="tab">Peer Reviewed Journals</div>
+  <div class="tab" data-target="tab-sci-confs" role="tab">SCI / SCOPUS / WoS Conferences</div>
+  <div class="tab" data-target="tab-peer-confs" role="tab">Peer Reviewed Conferences</div>
+  <div class="tab" data-target="tab-national-confs" role="tab">National Conferences</div> <!-- NEW TAB -->
+  <div class="tab" data-target="tab-patents-granted" role="tab">Patent Granted</div>
+  <div class="tab" data-target="tab-patents-published" role="tab">Patent Published</div>
+</di
 
     <!-- Tab panels -->
     <div id="tab-sci-journals" class="tab-panel">
@@ -287,6 +283,33 @@
         </tbody>
       </table>
     </div>
+    <div id="tab-national-confs" class="tab-panel" style="display:none">
+  <h2>National Conferences (reverse chronological)</h2>
+  <table class="pub-table">
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th>Authors</th>
+        <th>Title / Proceeding</th>
+        <th>Conference</th>
+        <th>DOI / Link</th>
+        <th>Proof</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Example entry -->
+      <tr>
+        <td data-label="Year">2015</td>
+        <td data-label="Authors">Chandra, B. M.; Rao, P. K.</td>
+        <td data-label="Title">Control strategies for renewable integrated power systems.</td>
+        <td data-label="Conference">National Conference on Power Electronics, Hyderabad</td>
+        <td data-label="Link">-</td>
+        <td data-label="Proof"><a class="proof-link" href="docs/natconf_001.pdf" target="_blank">View</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 
     <div id="tab-patents-granted" class="tab-panel" style="display:none">
       <h2>Patents Granted</h2>
