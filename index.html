@@ -12,6 +12,7 @@
       --text:#1a1a1a;
       --muted:#5a6a7a;
       --card:#fff;
+      --accent:#eaf2fb;
     }
     *{box-sizing:border-box;}
     html,body{height:100%;}
@@ -27,6 +28,7 @@
       background:linear-gradient(180deg,var(--ribbon1),var(--ribbon2));
       color:#fff; position:sticky; top:0; height:100vh; overflow:auto;
       box-shadow:3px 0 16px rgba(0,0,0,.12);
+      padding-bottom:40px;
     }
     nav{padding:20px 12px;}
     nav a{
@@ -43,10 +45,10 @@
 
     /* MAIN CONTENT */
     .main{
-      flex:1; padding:40px; max-width:1100px; margin:0 auto;
+      flex:1; padding:36px; max-width:1100px; margin:0 auto;
     }
 
-    /* Profile card: two columns (left: avatar+details, right: education image + quote) */
+    /* Profile card: two columns */
     .profile-card{
       background:var(--card);
       border-radius:14px;
@@ -68,6 +70,7 @@
       border:4px solid var(--ribbon1); overflow:hidden;
       box-shadow:0 8px 20px rgba(4,58,99,.12);
       flex:0 0 120px;
+      background:#fff;
     }
     .avatar img{width:100%; height:100%; object-fit:cover;}
     .details h2{margin:0 0 6px 0; color:var(--ribbon1); font-size:20px;}
@@ -81,6 +84,16 @@
     }
     .cv-btn:hover{filter:brightness(.95);}
 
+    /* profile links (icons) */
+    .profiles{
+      margin-top:10px; display:flex; gap:12px; align-items:center;
+    }
+    .profiles a img{
+      width:28px; height:28px; object-fit:contain;
+      transition:transform .2s ease;
+    }
+    .profiles a:hover img{transform:scale(1.15);}
+
     /* right column: education image + quote */
     .right-col{
       display:flex; align-items:center; gap:16px;
@@ -91,7 +104,7 @@
     .edu-thumb{
       width:150px; height:110px; border-radius:8px; overflow:hidden;
       flex:0 0 150px; box-shadow:0 8px 18px rgba(4,58,99,.08);
-      background: #eef6fb;
+      background: var(--accent);
     }
     .edu-thumb img{width:100%; height:100%; object-fit:cover;}
     .quote{
@@ -100,7 +113,7 @@
     .quote p{margin:0 0 6px 0; font-size:15px; color:var(--ribbon1);}
     .quote small{color:var(--muted); font-weight:700;}
 
-    /* THOUGHTFUL MESSAGE under profile-card */
+    /* Thoughtful message */
     .thought{
       margin-top:24px; padding:20px;
       background:var(--card); border-left:6px solid var(--ribbon2);
@@ -109,7 +122,40 @@
     .thought h3{margin-top:0; color:var(--ribbon1);}
     .thought p{font-size:15px; color:var(--muted); line-height:1.6;}
 
-    /* RESPONSIVE */
+    /* Research projects */
+    #research-projects{
+      margin-top:28px;
+    }
+    #research-projects h3{
+      color:var(--ribbon1); margin:0 0 12px 0;
+    }
+    .projects-grid{
+      display:grid;
+      gap:14px;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      margin-top:12px;
+    }
+    .project-card{
+      background:var(--card); border-radius:10px; padding:14px;
+      box-shadow:0 8px 20px rgba(4,58,99,.06);
+      display:flex; flex-direction:column; gap:8px;
+    }
+    .project-card h4{margin:0; color:var(--ribbon2); font-size:16px;}
+    .meta{font-size:13px; color:var(--muted);}
+    .meta strong{color:#333}
+    .project-card p.desc{font-size:14px; color:#333; margin:6px 0 0 0; line-height:1.4}
+    .project-actions{margin-top:auto; display:flex; gap:10px; align-items:center;}
+    .btn-outline{
+      padding:8px 12px; border-radius:8px; text-decoration:none;
+      border:1px solid var(--ribbon2); color:var(--ribbon2); font-weight:700; font-size:13px;
+    }
+    .btn-primary{
+      padding:8px 12px; border-radius:8px; text-decoration:none;
+      background:var(--ribbon2); color:#fff; font-weight:700; font-size:13px;
+      box-shadow:0 4px 12px rgba(11,102,168,.12);
+    }
+
+    /* Responsive */
     @media (max-width:960px){
       .profile-card{grid-template-columns:1fr; padding:14px;}
       .left-col{flex-direction:row; align-items:center;}
@@ -128,6 +174,7 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="education.html">Education</a>
+      <a href="#research-projects">Research Projects & Grants</a>
       <a href="experience.html">Experience</a>
       <a href="guidance.html">Guidance</a>
       <a href="teaching.html">Teaching Materials</a>
@@ -160,18 +207,30 @@
           <p class="dept">EEE Dept, QIS College of Engineering & Technology</p>
           <p class="research">Research: Power Electronics, FACTS, FPGA Controllers, Renewable Energy, EVs, Smart Grids</p>
           <a class="cv-btn" href="CV_Dr Mouli Chandra.pdf">Download CV (PDF)</a>
+
+          <!-- Profile IDs with icons -->
+          <div class="profiles">
+            <a href="https://scholar.google.com/citations?user=OStYD4YAAAAJ&hl=en" target="_blank">
+              <img src="scholar.png" alt="Google Scholar">
+            </a>
+            <a href="https://orcid.org/0000-0002-XXXX-YYYY" target="_blank">
+              <img src="orcid.png" alt="ORCID">
+            </a>
+            <a href="https://www.scopus.com/authid/detail.uri?authorId=1234567890" target="_blank">
+              <img src="scopus.png" alt="Scopus">
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- RIGHT: education image + quote -->
       <div class="right-col">
         <div class="edu-thumb">
-          <!-- replace education-image.png with your image -->
-          <img src="budda.png" alt="Education illustration">
+          <img src="budda.png" alt="Buddha illustration">
         </div>
         <div class="quote">
           <p>"Education lights the path from curiosity to creation."</p>
-          
+          <small>— Inspired by Gautama Buddha</small>
         </div>
       </div>
     </div>
@@ -179,11 +238,33 @@
     <div class="thought">
       <h3>My Philosophy of Education</h3>
       <p>
-        Education is not the filling of a vessel, but the kindling of a flame. I believe in shaping students into innovators,
-        leaders, and responsible citizens who carry both technical expertise and strong values.
-        Through knowledge, curiosity, and collaboration, we build not just successful careers, but a stronger society.
+        Education is not the filling of a vessel, but the kindling of a flame. 
+        I believe in shaping students into innovators, leaders, and responsible citizens 
+        who carry both technical expertise and strong values.
       </p>
     </div>
+
+    <!-- Research Projects & Grants -->
+    <section id="research-projects">
+      <h3>Research Projects & Grants</h3>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h4>Autonomous Fire-Suppression System for Railways</h4>
+          <div class="meta"><strong>Agency:</strong> Railway Research Board • <strong>Value:</strong> ₹ 18,00,000</div>
+          <p class="desc">Prototype for early fire detection and suppression in railway coaches.</p>
+        </article>
+        <article class="project-card">
+          <h4>FPGA-Based FACTS Controller for Grid Stability</h4>
+          <div class="meta"><strong>Agency:</strong> DST-SERB • <strong>Value:</strong> ₹ 12,50,000</div>
+          <p class="desc">Fast-acting FPGA controllers for grid voltage stability improvement.</p>
+        </article>
+        <article class="project-card">
+          <h4>EV Charger Integration with Renewable Microgrids</h4>
+          <div class="meta"><strong>Agency:</strong> Industry Collaboration • <strong>Value:</strong> ₹ 14,70,000</div>
+          <p class="desc">Smart controllers for PV-based EV charging integration.</p>
+        </article>
+      </div>
+    </section>
   </main>
 </body>
 </html>
