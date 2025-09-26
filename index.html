@@ -6,226 +6,238 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <style>
     :root{
-      --blue-900:#022a47;
-      --blue-800:#043a63;
-      --blue-700:#0b66a8;
-      --blue-500:#2a8bd3;
-      --text:#1c1f24;
-      --muted:#5f6772;
-      --bg:#fbfcfe;
+      --ribbon1:#043a63;
+      --ribbon2:#0b66a8;
+      --text:#1a1a1a;
+      --muted:#5b6b7a;
+      --bg:#f7f9fc;
       --card:#ffffff;
-      --ring:rgba(11,102,168,0.2);
-      --radius:16px;
-      --ribbon-h:72px;
-      --sidebar-w:330px;
     }
-
-    /* Reset & base */
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
-      margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color:var(--text); background:var(--bg); line-height:1.55;
+      margin:0; font-family: Arial, Helvetica, sans-serif; color:var(--text);
+      background:var(--bg);
+      display:flex; min-height:100vh;
     }
-    img{display:block; max-width:100%}
 
-    /* Thick Ribbon Header */
-    header{
-      position:sticky; top:0; z-index:1000;
-      background:linear-gradient(90deg,var(--blue-900),var(--blue-800) 35%, var(--blue-700));
-      color:#fff; box-shadow:0 8px 24px rgba(2,42,71,0.25);
-    }
-    .ribbon{
-      height:var(--ribbon-h);
-      display:flex; align-items:center; gap:24px;
-      padding:0 clamp(16px, 4vw, 40px);
+    /* ========== LEFT RIBBON SIDEBAR ========== */
+    .sidebar{
+      width:310px; min-width:280px; max-width:360px;
+      background: linear-gradient(180deg, var(--ribbon1), var(--ribbon2));
+      color:#fff; position:sticky; top:0; height:100vh; overflow:auto;
+      box-shadow: 3px 0 16px rgba(0,0,0,.12);
     }
     .brand{
-      font-weight:800; letter-spacing:.3px; font-size:20px; white-space:nowrap;
+      display:flex; align-items:center; gap:14px;
+      padding:18px 18px 12px 18px; border-bottom:1px solid rgba(255,255,255,.12);
     }
+    .brand .avatar{
+      width:72px; height:72px; border-radius:50%; overflow:hidden;
+      border:3px solid rgba(255,255,255,.65);
+      box-shadow: 0 6px 16px rgba(0,0,0,.25);
+      flex:0 0 auto;
+    }
+    .brand .avatar img{width:100%; height:100%; object-fit:cover}
+    .brand .info h1{
+      font-size:18px; margin:0 0 6px 0; font-weight:800; line-height:1.2;
+    }
+    .brand .info .role{font-size:12px; opacity:.95; line-height:1.4}
+    .brand .info .dept{font-size:12px; opacity:.9}
+
+    .quick{
+      padding:14px 18px;
+      font-size:13px; line-height:1.5; opacity:.95;
+      border-bottom:1px solid rgba(255,255,255,.12);
+    }
+    .cv-btn{
+      display:inline-block; margin-top:8px; padding:8px 12px; font-weight:700;
+      color:#043a63; background:#fff; border-radius:8px; text-decoration:none;
+      box-shadow:0 2px 8px rgba(0,0,0,.15);
+    }
+    .cv-btn:hover{filter:brightness(.97)}
+
     nav{
-      display:flex; gap:4px; flex:1; overflow:auto; scrollbar-width:none;
+      display:block; padding:10px 8px 18px 8px;
     }
     nav a{
-      color:#fff; text-decoration:none; font-weight:600; font-size:14px;
-      padding:10px 14px; border-radius:10px; opacity:.95; white-space:nowrap;
-      border:1px solid transparent;
+      display:block; color:#fff; text-decoration:none;
+      padding:12px 14px; margin:6px 8px;
+      font-weight:700; font-size:14px; letter-spacing:.2px;
+      border-radius:10px;
+      background:linear-gradient(90deg, rgba(255,255,255,.08), rgba(255,255,255,0));
+      border:1px solid rgba(255,255,255,.12);
+      transition:transform .15s ease, background .2s ease, box-shadow .2s ease;
     }
-    nav a:hover{background:rgba(255,255,255,0.08); opacity:1}
-    /* Active link via body[data-page] */
-    body[data-page="home"] a[data-link="home"],
-    body[data-page="about"] a[data-link="about"],
-    body[data-page="education"] a[data-link="education"],
-    body[data-page="experience"] a[data-link="experience"],
-    body[data-page="guidance"] a[data-link="guidance"],
-    body[data-page="teaching"] a[data-link="teaching"],
-    body[data-page="conferences"] a[data-link="conferences"],
-    body[data-page="journals"] a[data-link="journals"],
-    body[data-page="books"] a[data-link="books"],
-    body[data-page="patents"] a[data-link="patents"],
-    body[data-page="fdp-participated"] a[data-link="fdp-participated"],
-    body[data-page="fdp-organised"] a[data-link="fdp-organised"],
-    body[data-page="confs-organised"] a[data-link="confs-organised"],
-    body[data-page="invited"] a[data-link="invited"],
-    body[data-page="reviewer"] a[data-link="reviewer"],
-    body[data-page="awards"] a[data-link="awards"],
-    body[data-page="memberships"] a[data-link="memberships"],
-    body[data-page="contact"] a[data-link="contact"]{
-      background:rgba(255,255,255,0.16);
-      border-color:rgba(255,255,255,0.25);
+    nav a:hover{
+      transform: translateX(4px);
+      background:linear-gradient(90deg, rgba(255,255,255,.16), rgba(255,255,255,.02));
+      box-shadow: inset 0 0 0 9999px rgba(255,255,255,.02);
+      text-decoration:underline;
     }
 
-    /* Layout */
-    .shell{
-      max-width:1200px; margin:24px auto; padding:0 20px;
-      display:grid; grid-template-columns: var(--sidebar-w) 1fr; gap:24px;
+    /* ========== MOBILE TOGGLE ========== */
+    .topbar{
+      display:none; position:sticky; top:0; z-index:1001;
+      background: linear-gradient(90deg, var(--ribbon1), var(--ribbon2));
+      color:#fff; padding:10px 14px; align-items:center; justify-content:space-between;
+      box-shadow:0 2px 10px rgba(0,0,0,.12);
+    }
+    .hamburger{
+      cursor:pointer; border:1px solid rgba(255,255,255,.35); padding:6px 10px; border-radius:8px;
+      font-weight:700; background:rgba(255,255,255,.1);
     }
 
-    /* Left Profile Card */
-    .profile{
-      position:sticky; top:calc(var(--ribbon-h) + 16px);
-      background:var(--card); border-radius:var(--radius);
-      box-shadow:0 12px 32px rgba(4,58,99,0.12);
-      border:1px solid rgba(4,58,99,0.08);
-      padding:22px;
+    /* ========== MAIN CONTENT ========== */
+    .main{
+      flex:1; padding:36px; max-width:1200px; margin:0 auto;
     }
-    .avatar{
-      width:160px; aspect-ratio:1/1; border-radius:50%;
-      margin:6px auto 14px; overflow:hidden;
-      border:6px solid var(--ring);
-      box-shadow:0 10px 28px rgba(11,102,168,0.25);
-      background:#eaf4fd;
-    }
-    h1{
-      margin:6px 0 6px; font-size:22px; line-height:1.25; color:var(--blue-800); text-align:center;
-    }
-    .title{
-      text-align:center; font-weight:600; color:var(--muted); font-size:14px;
-    }
-    .org{
-      text-align:center; color:#2a313b; font-size:14px; margin:6px 0 12px;
-    }
-    .chipset{
-      display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin:10px 0 14px;
-    }
-    .chip{
-      font-size:12px; padding:6px 8px; border-radius:999px; background:#f0f6fc; border:1px solid #e1eefb;
-    }
-    .cta{
-      display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:10px;
-    }
-    .btn{
-      display:inline-block; text-decoration:none; font-weight:700; font-size:14px;
-      background:var(--blue-700); color:#fff; padding:10px 14px; border-radius:10px;
-      border:1px solid rgba(0,0,0,0.05);
-    }
-    .btn:hover{background:var(--blue-800)}
-    .link{
-      display:inline-block; text-decoration:none; font-weight:600; font-size:13px;
-      padding:8px 10px; border-radius:10px; background:#f6f9fe; border:1px solid #e3eefc; color:var(--blue-800);
-    }
-    .link:hover{background:#eef5fe}
-
-    /* Right Content Card */
-    main{
-      background:var(--card); border-radius:var(--radius);
-      box-shadow:0 12px 32px rgba(4,58,99,0.08);
-      border:1px solid rgba(4,58,99,0.08);
+    .hero{
+      background: var(--card);
+      border-radius:16px;
+      box-shadow:0 10px 24px rgba(4,58,99,.10);
       padding:28px;
     }
-    h2{margin:0 0 10px; color:var(--blue-800)}
-    p{margin:0 0 12px}
-    .lead{font-size:16px; color:#344054}
+    .hero-grid{
+      display:grid; grid-template-columns: 300px 1fr; gap:24px; align-items:center;
+    }
+    .portrait{
+      width:100%; aspect-ratio:1/1; border-radius:14px; overflow:hidden;
+      border:4px solid #eaf2f9;
+      box-shadow: 0 10px 24px rgba(11,102,168,.15);
+    }
+    .portrait img{width:100%; height:100%; object-fit:cover}
+    h2{color:var(--ribbon1); margin:0 0 8px 0; font-size:26px}
+    .tagline{color:var(--muted); margin:6px 0 14px 0; font-weight:600}
+    .research{margin-top:10px; font-size:15px}
+    .pill{
+      display:inline-block; padding:8px 12px; border-radius:999px;
+      background:#eaf2f9; color:#043a63; font-weight:700; text-decoration:none;
+      margin-top:12px;
+    }
 
-    /* Responsive */
+    .cards{
+      margin-top:26px; display:grid; gap:16px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .card{
+      background:var(--card); border-radius:14px; padding:16px;
+      box-shadow:0 8px 20px rgba(4,58,99,.08);
+    }
+    .card h3{margin:0 0 8px 0; color:#0b66a8}
+
+    footer{
+      color:#607489; font-size:13px; text-align:center; padding:16px 8px;
+    }
+
+    /* ========== RESPONSIVE ========== */
     @media (max-width: 980px){
-      .shell{grid-template-columns:1fr}
-      .profile{position:relative; top:auto}
-      :root{ --sidebar-w:100% }
+      .sidebar{position:fixed; left:-100%; transition:left .25s ease}
+      .sidebar.open{left:0}
+      .topbar{display:flex}
+      .main{padding:18px}
+      .hero-grid{grid-template-columns: 1fr}
     }
   </style>
 </head>
+<body>
+  <!-- Mobile top bar with toggle -->
+  <div class="topbar">
+    <div><strong>Dr. B. Mouli Chandra</strong></div>
+    <button class="hamburger" onclick="document.querySelector('.sidebar').classList.toggle('open')">Menu</button>
+  </div>
 
-<!-- Set data-page to highlight the current tab -->
-<body data-page="home">
-  <header>
-    <div class="ribbon">
-      <div class="brand">Dr. B. Mouli Chandra</div>
-      <nav aria-label="Primary">
-        <a data-link="home" href="index.html">Home</a>
-        <a data-link="about" href="about.html">About</a>
-        <a data-link="education" href="education.html">Education</a>
-        <a data-link="experience" href="experience.html">Experience</a>
-        <a data-link="guidance" href="guidance.html">Guidance</a>
-        <a data-link="teaching" href="teaching.html">Teaching Materials</a>
-        <a data-link="conferences" href="conferences.html">Conferences</a>
-        <a data-link="journals" href="journals.html">Journals</a>
-        <a data-link="books" href="books.html">Books</a>
-        <a data-link="patents" href="patents.html">Patents</a>
-        <a data-link="fdp-participated" href="fdp-participated.html">FDPs Participated</a>
-        <a data-link="fdp-organised" href="fdp-organised.html">FDPs Organised</a>
-        <a data-link="confs-organised" href="confs-organised.html">Confs Organised</a>
-        <a data-link="invited" href="invited.html">Invited Talks</a>
-        <a data-link="reviewer" href="reviewer.html">Reviewer</a>
-        <a data-link="awards" href="awards.html">Awards</a>
-        <a data-link="memberships" href="memberships.html">Memberships</a>
-        <a data-link="contact" href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <div class="shell">
-    <!-- Left: Profile card (sticky) -->
-    <aside class="profile">
+  <!-- LEFT RIBBON SIDEBAR -->
+  <aside class="sidebar">
+    <div class="brand">
       <div class="avatar">
         <img src="bmc_pic-removebg-preview.png" alt="Dr. B. Mouli Chandra">
       </div>
-      <h1>Dr. (Prof.) Balapanur Mouli Chandra</h1>
-      <div class="title">Dean — Development of Product Ecosystems</div>
-      <div class="org">EEE Dept, QIS College of Engineering & Technology</div>
+      <div class="info">
+        <h1>Dr. (Prof.) B. Mouli Chandra</h1>
+        <div class="role">Dean – Development of Product Ecosystems</div>
+        <div class="dept">EEE, QIS College of Engg. & Tech.</div>
+      </div>
+    </div>
 
-      <div class="chipset" aria-label="Research Interests">
-        <span class="chip">Power Electronics</span>
-        <span class="chip">FACTS</span>
-        <span class="chip">FPGA Controllers</span>
-        <span class="chip">Renewable Energy</span>
-        <span class="chip">EVs</span>
-        <span class="chip">Smart Grids</span>
+    <div class="quick">
+      <div><em>Research:</em> Power Electronics, FACTS, FPGA Controllers, Renewable Energy, EVs, Smart Grids</div>
+      <a class="cv-btn" href="CV_Dr Mouli Chandra.pdf">Download CV (PDF)</a>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="education.html">Education</a>
+      <a href="experience.html">Experience</a>
+      <a href="guidance.html">Guidance</a>
+      <a href="teaching.html">Teaching Materials</a>
+      <a href="conferences.html">Conferences</a>
+      <a href="journals.html">Journals</a>
+      <a href="books.html">Books</a>
+      <a href="patents.html">Patents</a>
+      <a href="fdp-participated.html">FDPs Participated</a>
+      <a href="fdp-organised.html">FDPs Organised</a>
+      <a href="confs-organised.html">Confs Organised</a>
+      <a href="invited.html">Invited Talks</a>
+      <a href="reviewer.html">Reviewer</a>
+      <a href="awards.html">Awards</a>
+      <a href="memberships.html">Memberships</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="portrait">
+          <img src="bmc_pic-removebg-preview.png" alt="Dr. B. Mouli Chandra">
+        </div>
+        <div>
+          <h2>Welcome</h2>
+          <p class="tagline">Professor, Researcher, and Industry Collaborator</p>
+          <p>
+            I work on high–impact applications in <strong>Power Electronics</strong>, 
+            <strong>FACTS</strong>, <strong>FPGA Controllers</strong>, and emerging 
+            areas such as <strong>Renewable Energy Systems</strong>, 
+            <strong>Electric Vehicles</strong>, and <strong>Smart Grids</strong>.
+          </p>
+          <a class="pill" href="contact.html">Get in touch</a>
+        </div>
       </div>
 
-      <div class="cta">
-        <a class="btn" href="CV_Dr Mouli Chandra.pdf">Download CV</a>
-        <a class="link" href="https://scholar.google.com/citations?user=OStYD4YAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-        <a class="link" href="https://orcid.org" target="_blank" rel="noopener">ORCID</a>
-        <a class="link" href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <div class="cards">
+        <div class="card">
+          <h3>Latest Publications</h3>
+          <p>See my recent journal articles, conferences, and book chapters.</p>
+          <a class="pill" href="journals.html">View Journals</a>
+        </div>
+        <div class="card">
+          <h3>Patents</h3>
+          <p>Overview of granted and published patents with application details.</p>
+          <a class="pill" href="patents.html">Browse Patents</a>
+        </div>
+        <div class="card">
+          <h3>Teaching</h3>
+          <p>Course materials, labs, and student guidance resources.</p>
+          <a class="pill" href="teaching.html">Teaching Materials</a>
+        </div>
+        <div class="card">
+          <h3>Invited Talks</h3>
+          <p>Keynotes, expert lectures, and industry interactions.</p>
+          <a class="pill" href="invited.html">Talks & Outreaches</a>
+        </div>
       </div>
-    </aside>
+    </section>
 
-    <!-- Right: Page content -->
-    <main>
-      <h2>Welcome</h2>
-      <p class="lead">
-        I work on practical solutions across <strong>Power Electronics, FACTS, FPGA Controllers, Renewable Energy Systems, Electric Vehicles,</strong> and <strong>Smart Grids</strong>.
-      </p>
-      <p>
-        Explore the navigation above for publications, teaching materials, patents, conferences, and more. Each section opens as a separate page.
-      </p>
+    <footer>
+      © <span id="year"></span> Dr. B. Mouli Chandra • QISCET • All rights reserved
+    </footer>
+  </main>
 
-      <!-- Example section blocks (you can delete these or keep as quick highlights) -->
-      <section>
-        <h3 style="color:var(--blue-700); margin:18px 0 8px;">Highlights</h3>
-        <ul style="margin:0; padding-left:18px">
-          <li>Recent patents and journals updated.</li>
-          <li>Teaching materials and FDPs organised are catalogued by year.</li>
-          <li>Open to collaborations in Renewable Energy & EV powertrains.</li>
-        </ul>
-      </section>
-    </main>
-  </div>
-
-  <!-- Optional: Small script to keep nav scroll-left at start on load (no external JS) -->
   <script>
-    document.querySelector('nav').scrollLeft = 0;
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
