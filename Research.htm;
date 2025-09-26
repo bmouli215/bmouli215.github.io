@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Research Projects & Grants - Dr. B. Mouli Chandra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">Dr. B. Mouli Chandra</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="research.html">Research Projects & Grants</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="students.html">Students</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Research Projects & Grants</h1>
+
+    <ul>
+      <li>
+        <strong>2016 - SERB, Dept. of Science & Technology (PI)</strong>  
+        Amount: ₹24,15,600  
+        <a href="https://drive.google.com/file/d/1BQt6vwavn9pSiwKd_SiMKDEkvupcoJjh/view?usp=sharing" target="_blank">View Document</a>
+      </li>
+
+      <li>
+        <strong>2017 - MODROBS, AICTE (PI)</strong>  
+        Amount: ₹15,29,000  
+        <a href="https://drive.google.com/file/d/1x-6nPAP3GMvKcgp5NwZgvz0B0cADCTv/view?usp=sharing" target="_blank">View Document</a>
+      </li>
+
+      <li>
+        <strong>2018 - Research Promotional Scheme, AICTE (PI)</strong>  
+        Amount: ₹12,80,392  
+        <a href="https://drive.google.com/file/d/1J5psJVIQE5QY1VrK1jKqrFok6h0N3/view?usp=sharing" target="_blank">View Document</a>
+      </li>
+
+      <li>
+        <strong>2019 - FIST Level 0, Dept. of Science & Technology (SI)</strong>  
+        Amount: ₹40,00,000  
+        <a href="https://drive.google.com/file/d/1bUfAfUAloPCmwTi8D7MJW7tVQWPRAXD/view?usp=sharing" target="_blank">View Document</a>
+      </li>
+
+      <li>
+        <strong>2020 - IDEA LABS, AICTE (PI)</strong>  
+        Amount: ₹1,02,00,000  
+        <a href="https://drive.google.com/file/d/1CtKpB5cG1sp80og_rPOxJzR3944/view?usp=sharing" target="_blank">View Document</a>
+      </li>
+
+      <li>
+        <strong>2025 - Matching Grant, Taylor University, Malaysia (PI)</strong>  
+        Amount: ₹12,00,000  
+        <a href="https://drive.google.com/file/d/1kVyQ54znO755e_dsnQsg0d87geYpXTDK/view?usp=sharing" target="_blank">View Document</a>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
+
+
