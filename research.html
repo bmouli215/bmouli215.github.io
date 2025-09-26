@@ -1,147 +1,106 @@
-/* === Professional Research Page Styles (append to style.css) === */
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Research Projects & Grants - Dr. B. Mouli Chandra</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Optional: use Google Font for a more professional look -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Dr. B. Mouli Chandra</div>
+      <nav class="main-nav">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="research.html" class="active">Research Projects &amp; Grants</a>
+        <a href="index.html#publications">Publications</a>
+        <a href="index.html#teaching">Teaching</a>
+        <a href="index.html#students">Students</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-/* Basic resets & font */
-:root {
-  --primary: #0b5fa5;    /* academic blue */
-  --muted: #6b7280;
-  --bg: #ffffff;
-  --card-bg: #fbfdff;
-  --max-width: 1100px;
-  --radius: 10px;
-  --shadow: 0 6px 18px rgba(10, 20, 40, 0.06);
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-}
+  <main class="container page-content">
+    <section class="hero">
+      <div class="hero-left">
+        <img src="profile.jpg" alt="Dr B. Mouli Chandra" class="profile-photo" />
+      </div>
+      <div class="hero-right">
+        <h1>Research Projects &amp; Grants</h1>
+        <p class="lead">Selected funded projects, consultancy and student grants — with funding agency, amount and duration.</p>
+        <a class="btn btn-primary" href="cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+      </div>
+    </section>
 
-body {
-  margin: 0;
-  color: #111827;
-  background: var(--bg);
-  -webkit-font-smoothing: antialiased;
-}
+    <section class="grants-section">
+      <div class="card">
+        <h2>Funded Projects</h2>
+        <p class="muted">Click a row to expand notes (if any).</p>
 
-/* Header */
-.site-header {
-  border-bottom: 1px solid #e6eef7;
-  background: #f8fbff;
-}
-.header-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 18px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.brand {
-  font-weight: 700;
-  color: var(--primary);
-  font-size: 1.05rem;
-}
-.main-nav a {
-  margin-left: 18px;
-  text-decoration: none;
-  color: #234a6b;
-  font-weight: 500;
-  font-size: 0.95rem;
-}
-.main-nav a.active {
-  color: var(--primary);
-  border-bottom: 2px solid var(--primary);
-  padding-bottom: 6px;
-}
+        <div class="table-wrap">
+          <table class="grants-table" aria-describedby="grants-desc">
+            <caption id="grants-desc" class="sr-only">List of funded research projects and grants</caption>
+            <thead>
+              <tr>
+                <th>Project Title</th>
+                <th>Agency</th>
+                <th>Amount</th>
+                <th>Duration</th>
+                <th>Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>FPGA-based Controllers for Drives &amp; FACTS</td>
+                <td>UGC</td>
+                <td>₹12,00,000</td>
+                <td>2019–2022</td>
+                <td>2019</td>
+              </tr>
+              <tr>
+                <td>Power Electronics &amp; FACTS</td>
+                <td>AICTE</td>
+                <td>₹20,00,000</td>
+                <td>2022–2025</td>
+                <td>2022</td>
+              </tr>
+              <tr>
+                <td>Renewable Energy Integration</td>
+                <td>DST</td>
+                <td>₹25,00,000</td>
+                <td>2018–2021</td>
+                <td>2018</td>
+              </tr>
+              <!-- Replace with your actual rows -->
+            </tbody>
+          </table>
+        </div>
+      </div>
 
-/* Layout container */
-.container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 28px 20px;
-}
+      <div class="card">
+        <h2>Consultancy & Student Grants</h2>
+        <ul class="compact-list">
+          <li>Consultancy — XYZ Power Systems Pvt. Ltd. — ₹8,00,000 — 2020</li>
+          <li>Student Innovation Grant — Smart Grid Applications — ₹2,00,000 — 2023</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-/* Hero */
-.hero {
-  display: flex;
-  gap: 28px;
-  align-items: center;
-  margin-bottom: 22px;
-}
-.hero-left { flex: 0 0 150px; text-align: center; }
-.profile-photo {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 6px solid #e8f1fb;
-  box-shadow: 0 8px 18px rgba(13, 40, 75, 0.06);
-}
-.hero-right h1 {
-  margin: 0 0 8px 0;
-  font-size: 1.6rem;
-  color: #0f1724;
-}
-.lead { margin: 6px 0 14px 0; color: var(--muted); }
-.btn {
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px 14px;
-  border-radius: 8px;
-  font-weight: 600;
-}
-.btn-primary {
-  background: var(--primary);
-  color: #fff;
-  box-shadow: 0 6px 14px rgba(11,95,165,0.12);
-}
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Dr. B. Mouli Chandra — Department of EEE, QIS College of Engineering &amp; Technology</p>
+    </div>
+  </footer>
 
-/* Cards & tables */
-.card {
-  background: var(--card-bg);
-  border-radius: var(--radius);
-  padding: 18px;
-  box-shadow: var(--shadow);
-  margin-bottom: 18px;
-}
-.table-wrap { overflow-x: auto; }
-.grants-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.95rem;
-}
-.grants-table thead th {
-  text-align: left;
-  padding: 12px 14px;
-  background: transparent;
-  color: #0b2b45;
-  font-weight: 700;
-  border-bottom: 2px solid #e6eef7;
-}
-.grants-table tbody td {
-  padding: 12px 14px;
-  border-bottom: 1px solid #eef6fb;
-  color: #223244;
-}
-.grants-table tbody tr:hover {
-  background: linear-gradient(90deg, rgba(8,77,136,0.03), rgba(8,77,136,0.02));
-}
-
-/* small utility */
-.muted { color: var(--muted); font-size: 0.95rem; }
-.compact-list { margin: 0; padding-left: 1rem; }
-
-/* Footer */
-.site-footer {
-  border-top: 1px solid #e6eef7;
-  margin-top: 28px;
-  background: #fbfdff;
-  padding: 18px 0;
-  color: var(--muted);
-  text-align: center;
-  font-size: 0.95rem;
-}
-
-/* responsiveness */
-@media (max-width: 800px) {
-  .hero { flex-direction: column; align-items: flex-start; }
-  .hero-left { text-align: left; }
-  .main-nav { display:flex; gap:8px; flex-wrap:wrap; }
-  .main-nav a { margin-left: 8px; font-size:0.9rem; }
-}
+  <script>
+    // small script: current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
