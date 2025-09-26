@@ -1,0 +1,558 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Publications - Dr. B. Mouli Chandra</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    /* Same base style as main page */
+    body { font-family: Arial, Helvetica, sans-serif; color:#111; margin:0; line-height:1.6; }
+    header { background:#f8fafc; border-bottom:1px solid #e6eef6; padding:12px 0; text-align:center; }
+    header .brand { font-weight:700; color:#043a63; font-size:18px; }
+    nav { margin-top:6px; }
+    nav a { color:#0b66a8; text-decoration:none; margin:0 10px; font-size:14px; }
+    nav a.active { font-weight:700; text-decoration:underline; }
+    .container { max-width:1100px; margin:28px auto; padding:0 20px; }
+
+    /* Section headings */
+    section { margin-top:34px; }
+    .area { margin-top:18px; }
+    h1.page-title { color:#0b3553; margin:0 0 6px 0; font-size:1.4rem; }
+    h2.area-title { color:#0b3553; font-size:1.05rem; margin:18px 0 8px 0; }
+    p.lead { color:#6b7280; margin:0 0 12px 0; }
+
+    /* Publication lists */
+    .pub-list { list-style: decimal; padding-left:20px; margin:8px 0 0 0; }
+    .pub-list li { margin:10px 0; font-size:14px; }
+    .pub-meta { color:#6b7280; font-size:13px; display:block; margin-top:4px; }
+    a.pub-link { color:#0b66a8; text-decoration:none; }
+    a.pub-link:hover { text-decoration:underline; }
+
+    /* compact table for conferences (if needed) */
+    .conf-list { list-style: decimal; padding-left:20px; margin:8px 0 0 0; }
+
+    /* Responsive */
+    @media (max-width:800px) {
+      nav { font-size:13px; }
+      .container { padding:0 14px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Dr. B. Mouli Chandra</div>
+    <nav>
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="research.html">Research Projects & Grants</a>
+      <a href="publications.html" class="active">Publications</a>
+      <a href="index.html#teaching">Teaching</a>
+      <a href="index.html#students">Students</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1 class="page-title">Publications</h1>
+    <p class="lead">Area-wise list of SCOPUS / SCI indexed journals, indexed international conferences, and peer-reviewed international journal publications.</p>
+
+    <!-- SCOPUS / SCI INDEXED JOURNALS -->
+    <section class="area" id="scopus-sci-journals">
+      <h2 class="area-title">SCOPUS / SCI INDEXED JOURNALS (Area wise)</h2>
+
+      <h3 style="margin:12px 0 6px 0; color:#0b3553;">Power Electronics and Energy Systems</h3>
+      <ol class="pub-list">
+        <li>
+          Balapanur, M. C., & Kondaveeti, S. L. T. (2019). Performance analysis improved hybrid DSTATCOM topology loads and compensate reactive power. <em>JARDCS Journal</em>, 11(6), 130-135. ISSN 1943-023X. 
+          <a class="pub-link" href="https://www.jardcs.org/archivesview.php?volume=1&issue=15" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Balapanur, M. C., & Nuthalapati, S. K. (2019). Energy storage system in grid connected inverter for a battery with bidirectional single stage. <em>JARDCS Journal</em>, 11(6), 123-127. ISSN 1943-023X. 
+          <a class="pub-link" href="https://www.jardcs.org/archivesview.php?volume=1&issue=15" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          R, P., Shajin, F. H., Balapanur, M. C., & Kommula, B. N. (2021). Diminishing energy consumption cost and optimal energy management of photovoltaic aided electric vehicle (PV-EV) by GFO-VITG approach. <em>Energy Sources Part A</em>, 41(11), 1-18. 
+          <a class="pub-link" href="https://doi.org/10.1080/15567036.2021.1986606" target="_blank" rel="noopener">https://doi.org/10.1080/15567036.2021.1986606</a>
+        </li>
+
+        <li>
+          Kumar, R. S., Reddy, C. S. R., & Chandra, B. M. (2023). Optimal performance assessment of intelligent controllers used in solar-powered electric vehicle. <em>Electrical Engineering &amp; Electromechanics</em>, (2), 20-26. 
+          <a class="pub-link" href="https://doi.org/10.20998/2074-272X.2023.2.04" target="_blank" rel="noopener">https://doi.org/10.20998/2074-272X.2023.2.04</a>
+        </li>
+
+        <li>
+          Reddy, C. S., Narukullapati, B. K., Rao, M. U. M., Ravindra, S., Venkatesh, P. M., Kumar, T. C. A., Berhanu, A. A., & Chandra, B. M. (2022). Non-isolated DC to DC converters for high-voltage gain applications using the MPPT approach. <em>Mathematical Problems in Engineering</em>, 2022, Article ID 9227651.
+          <a class="pub-link" href="https://doi.org/10.1155/2022/9227651" target="_blank" rel="noopener">https://doi.org/10.1155/2022/9227651</a>
+        </li>
+
+        <li>
+          Reddy, C. S., Prasanth, B. V., & Chandra, B. M. (2023). Active power management of grid-connected PV-PEV using a hybrid GRFO-ITSA technique. <em>Science and Technology for Energy Transition</em>, 78.
+          <a class="pub-link" href="https://doi.org/10/2516/stet/2023001" target="_blank" rel="noopener">DOI (as provided)</a>
+        </li>
+      </ol>
+
+      <h3 style="margin:18px 0 6px 0; color:#0b3553;">Energy Management and Optimization</h3>
+      <ol class="pub-list" start="7">
+        <li>
+          Venkata Prasanth, B., Chandra, B. M., Reddy, C. S., & Krishna, T. M. (2023). Optimal integration of long- and short-term operational planning decisions to design and manage electronic vehicle charge stations by CQOCRO technique. <em>Energy and Environment</em>. 
+          <a class="pub-link" href="https://doi.org/10.1177/0958305X231190352" target="_blank" rel="noopener">https://doi.org/10.1177/0958305X231190352</a>
+        </li>
+
+        <li>
+          Suresh, O. P., Chandra, B. M., Reddy, C. S., & Prasanth, B. V. (2024). Economic analysis of grid-tied hybrid solar wind system with electric vehicle CS using COA-QNN approach. <em>Journal of Energy Storage</em>, 100(A), 113448.
+          <a class="pub-link" href="https://doi.org/10.1016/j.est.2024.113448" target="_blank" rel="noopener">https://doi.org/10.1016/j.est.2024.113448</a>
+        </li>
+
+        <li>
+          Reddy, C. S., Prasanth, B. V., Suresh, O. P., & Chandra, B. M. (2024). A hybrid YDSE - THDCNN approach based multi-objective optimization of energy management for renewable energy sources with electric vehicles. <em>Journal of Energy Storage</em>, 100(A), 113402.
+          <a class="pub-link" href="https://doi.org/10.1016/j.est.2024.113402" target="_blank" rel="noopener">https://doi.org/10.1016/j.est.2024.113402</a>
+        </li>
+      </ol>
+
+      <h3 style="margin:18px 0 6px 0; color:#0b3553;">Smart Grids and Renewable Energy Integration</h3>
+      <ol class="pub-list" start="10">
+        <li>
+          Kumar, N. B., Rao, M. U. M., Veeranjaneyulu, J., Chandra, B. M., & Venkatesh, P. M. (2024). An optimized superconducting magnetic energy storage for grid-connected systems. <em>Journal of New Materials for Electrochemical Systems</em>, 27(1), 52-59.
+          <a class="pub-link" href="https://doi.org/10.14447/jnmes.v27i1.a08" target="_blank" rel="noopener">https://doi.org/10.14447/jnmes.v27i1.a08</a>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SCOPUS / SCI INDEXED INTERNATIONAL CONFERENCES -->
+    <section class="area" id="scopus-sci-conferences">
+      <h2 class="area-title">SCOPUS / SCI INDEXED INTERNATIONAL CONFERENCES</h2>
+
+      <h3 style="margin:12px 0 6px 0; color:#0b3553;">Energy Systems and Power Electronics</h3>
+      <ol class="pub-list">
+        <li>
+          Kumar, P. B., & Chandra, B. M. (2024). Fuzzy logic controller-based non-isolated single-phase half-bridge unified power quality conditioner for ripple elimination. In <em>Proceedings of the IEEE 3rd International Conference on Electrical Power Engineering, Communication and Computing Technology (ODICON-2024)</em>, 1-6.
+          <a class="pub-link" href="https://doi.org/10.1109/ODICON62106.2024.10797524" target="_blank" rel="noopener">https://doi.org/10.1109/ODICON62106.2024.10797524</a>
+        </li>
+
+        <li>
+          Prakash, A., Srikanth, T., Chandra, B. M., & Krishnakumar, R. (2022). Search and rescue optimization to solve economic emission dispatch. In <em>Proceedings of ICEEICT (2022)</em>, 1-6.
+          <a class="pub-link" href="https://doi.org/10.1109/ICEEICT53079.2022.9768510" target="_blank" rel="noopener">https://doi.org/10.1109/ICEEICT53079.2022.9768510</a>
+        </li>
+
+        <li>
+          Prakash, A., Anandh, R., & Chandra, B. M. (2019). Forward search approach using power search algorithm (FSA-PSA) to solve dynamic economic load dispatch problems. In <em>Proceedings of ICACCS (2019)</em>, 1-6.
+          <a class="pub-link" href="https://doi.org/10.1109/ICACCS.2019.8728541" target="_blank" rel="noopener">https://doi.org/10.1109/ICACCS.2019.8728541</a>
+        </li>
+      </ol>
+
+      <h3 style="margin:18px 0 6px 0; color:#0b3553;">Smart Grids and IoT</h3>
+      <ol class="pub-list" start="4">
+        <li>
+          Deepika, M., Kavitha, M., Chakravarthy, N. S. K., Srinivas Rao, J., Mohan Reddy, D., & Chandra, B. M. (2021). A critical study on campus energy monitoring system and role of IoT. Proceedings of the IEEE Conference.
+          <a class="pub-link" href="https://doi.org/10.1109/SeFet48154.2021.9375715" target="_blank" rel="noopener">https://doi.org/10.1109/SeFet48154.2021.9375715</a>
+        </li>
+
+        <li>
+          Prakash, A., Srikanth, T., Chandra, B. M., & Krishnakumar, R. (2022). Search and rescue optimization to solve economic emission dispatch. (Duplicate entry in original list — included above).
+        </li>
+
+        <li>
+          B. M. Chandra, P. Thenmozhi, S. Padma, Y. Shailaja, I. G and E. M. Kumaran (2024). "LTECP: Experimental Analysis of Medicinal Plant Recognition System Based on Learning Assisted Texture Evaluation and Classification Principle," <em>ICSES 2024</em>, Chennai, India, 1-6.
+          <a class="pub-link" href="https://doi.org/10.1109/ICSES63760.2024.10910839" target="_blank" rel="noopener">https://doi.org/10.1109/ICSES63760.2024.10910839</a>
+        </li>
+      </ol>
+
+      <h3 style="margin:18px 0 6px 0; color:#0b3553;">Induction Motor Drives</h3>
+      <ol class="pub-list" start="7">
+        <li>
+          Chandra, B. M., Venkata Prasanth, B., & Manindher, K. G. (2018). A review on parameter estimation techniques in decoupling control of induction motor drive. <em>Proceedings of ICEES (2018)</em>.
+          <a class="pub-link" href="https://doi.org/10.1109/ICEES.2018.8443209" target="_blank" rel="noopener">https://doi.org/10.1109/ICEES.2018.8443209</a>
+        </li>
+
+        <li>
+          Chandra, B. M., & Tara Kalyani, S. (2012). Online estimation of stator resistance in vector control of induction motor drive. <em>Power India Conference</em>, 1-6.
+          <a class="pub-link" href="https://doi.org/10.1109/PowerI.2012.6479478" target="_blank" rel="noopener">https://doi.org/10.1109/PowerI.2012.6479478</a>
+        </li>
+
+        <li>
+          Chandra, B. M., & Tara Kalyani, S. (2012). Online identification and adaptation of rotor resistance in feed forward vector controlled induction motor drive. <em>IICEPE-2012</em>.
+          <a class="pub-link" href="https://doi.org/10.1109/IICPE.2012.6450372" target="_blank" rel="noopener">https://doi.org/10.1109/IICPE.2012.6450372</a>
+        </li>
+      </ol>
+    </section>
+
+    <!-- INTERNATIONAL JOURNAL PUBLICATIONS PEER REVIEWED -->
+    <section class="area" id="peer-reviewed-journals">
+      <h2 class="area-title">INTERNATIONAL JOURNAL PUBLICATIONS — PEER REVIEWED (Area wise)</h2>
+
+      <ol class="pub-list">
+        <li>
+          Chandra, B. M., & Kalyani, S. T. (2011). Simulating electric drive system with frequency control using Matlab/Simulink. <em>AIRC Journal</em>, 1(2), 1-9. ISSN: 2248-9665.
+        </li>
+
+        <li>
+          Chandra, B. M., & Kalyani, S. T. (2012). Modeling and simulation of rotor flux observer based indirect vector control of induction motor drive using fuzzy logic controller. <em>IJEEE Journal</em>, 2(2,3,4), 1-6. ISSN: 2231-5284.
+          <a class="pub-link" href="https://www.interscience.in/ijeee/view.php?rowcode=RzY2YnRvUXgwRHAwTE9xU2pwQjFzZz09" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., & Kalyani, S. T. (2012). Online rotor time constant tuning in indirect vector control of induction motor drive. <em>IREA Italy Journal</em>, 1(1), 11-16. ISSN: 2281-288.
+          <a class="pub-link" href="https://www.praiseworthyprize.org/jsm/index.php?journal=irea&page=article&op=view&path%5B%5D=9943" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Tabassum, S., & Chandra, B. M. (2012). Power quality improvement by UPQC using ANN controller. <em>IJERA Journal</em>, 2(4), 2019-2024. ISSN: 2248-9622.
+          <a class="pub-link" href="https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=9535c1b90a7e041eedb7c5a3738b4f06edfd69f5" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., & Kalyani, S. T. (2013). Effect of rotor resistance and compensation in indirect vector control using artificial neural networks (ANNs). <em>IAEME, IJEEE Journal</em>, 4(4), 255-263. ISSN: 0976-6553.
+          <a class="pub-link" href="https://iaeme.com/MasterAdmin/Journal_uploads/IJEET/VOLUME_4_ISSUE_4/40220130404026.pdf" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., & Kalyani, S. T. (2013). FPGA controlled stator resistance estimation in IVC using FLC. <em>GJRE, USA Journal</em>, 13(13), 9-13. ISSN: 2249-4596.
+          <a class="pub-link" href="https://globaljournals.org/GJRE_Volume13/2-FPGA-Controlled-Stator.pdf" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Deepthi Bai, R. M., & Chandra, B. M. (2013). Speed sensorless control scheme of induction motor against rotor resistance variation. <em>IJSETR Journal</em>, 2(17), 1892-1897. ISSN: 2319-8885.
+          <a class="pub-link" href="https://ijsetr.com/uploads/526341IJSETR341-01.pdf" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Soumya, M., & Chandra, B. M. (2014). Implementation of induction machine for indirect field oriented rotor resistance adaptation based on the MRAS scheme. <em>IJSETR Journal</em>, 3(01), 39-44. ISSN: 2319-8885.
+          <a class="pub-link" href="https://ijsetr.com/uploads/564231IJSETR560-07.pdf" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Kondaiah, Y. V., & Chandra, B. M. (2014). Minimization of low frequency oscillations in the power system using PSS and UPFC. <em>IJEEE Journal</em>, 7(2), 133-142. ISSN: 0974-2174.
+          <a class="pub-link" href="http://www.irphouse.com/ijeee/ijeeev7n2_06.pdf" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <!-- more items continue similarly -->
+        <!-- I'll include the rest up to item 74 as provided, preserving any URLs you gave. -->
+
+        <li>
+          Ramasubbamma, D., & Chandra, B. M. (2014). An advanced neural scheme based deregulated electricity market price forecasting using recurrent ANN. <em>IJRECE Journal</em>, 2(6), 663-668. ISSN: 2321-5593.
+        </li>
+
+        <li>
+          Balaji, K., Madhusudhan, V., & Chandra, B. M. (2015). A new power factor correction method using an inverter fed interior permanent magnet (IPM) motor. <em>IJMETMR Journal</em>, 2(2), 468-473. ISSN: 2348-4845.
+          <a class="pub-link" href="http://www.ijmetmr.com/oldecember2015/KBalaji-VMadhusudhan-BMouliChandra-83.pdf" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Vijayalakshmi, R., Naga Mahesh, G., & Chandra, B. M. (2015). Seven level shunt active power filter for induction motor drive system. <em>IJR Journal</em>, 2(12), 578-583. ISSN: 2348-6848.
+          <a class="pub-link" href="https://journals.pen2print.org/index.php/ijr/article/view/3526/3385" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Vishnu Vandana, Y., & Chandra, B. M. (2015). Single phase seven level grid connected inverter for photovoltaic system. <em>IJPRES Journal</em>, 6(1), 129-137. ISSN: 2374-3751.
+        </li>
+
+        <li>
+          Venkatagireesh, B., Reddy Prasanna, M., & Chandra, B. M. (2015). A new cascaded multilevel inverter and segmented energy storage fed PMSM drive with autonomous power regenerative control. <em>IJMETMR Journal</em>, 2(12), 474-477.
+          <a class="pub-link" href="http://www.ijmetmr.com/oldecember2015/BVenkatagireesh-MReddyPrasanna-BMouliChandra-84.pdf" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Aiswarya, K., Reddy Prasanna, M., & Chandra, B. M. (2015). A novel hybrid converter based motor drive system with improved quality and dynamic response. <em>IJMETMR Journal</em>, 2(12), 463-467.
+          <a class="pub-link" href="http://www.ijmetmr.com/oldecember2015/KAiswarya-MReddyPrasanna-BMouliChandra-82.pdf" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Rama Chandra Reddy, V., Madhusudhan, V., & Chandra, B. M. (2015). Reduction in commutation torque ripple in sensorless BLDC motor fed by PV cells using fuzzy logic controller. <em>IJR Journal</em>, 2(2), 605-611.
+          <a class="pub-link" href="https://journals.pen2print.org/index.php/ijr/article/download/3530/3389" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Pinnam Swetha, & Chandra, B. M. (2015). Design and implementation of 11-level inverter with FACTS capability for distributed energy systems. <em>IJMETMR Journal</em>, 2(11), 1158-1164.
+          <a class="pub-link" href="http://www.ijmetmr.com/olnovember2015/PinnamSwetha-BMouliChandra-A-21.pdf" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Naveen Kumar, K., & Chandra, B. M. (2016). Performance evaluation of HVDC transmission system with the combination of VSC and H-Bridge cells. <em>IJIRAE Journal</em>, 3(3), 1-8.
+          <a class="pub-link" href="https://www.ijirae.com/volume-3-issue-2" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Nemalikanti Suvarna Raju, & Chandra, B. M. (2017). Enhancement of power quality improvement with multilevel inverter based IPQC for microgrid. <em>IJSETR Journal</em>, 6(17), 3239-3247.
+          <a class="pub-link" href="https://ijsetr.com/uploads/325164IJSETR14497-594.pdf" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chenchaiah, M., & Chandra, B. M. (2017). A new switched capacitor inverter topology with boost facility. <em>IJAIST</em>, 6(11), 157-162.
+          <a class="pub-link" href="https://jst.org.in/index.php/pub/article/view/148" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Manindher, K. G., Chandra, B. M., & Thummala, S. (2017). An improved power factor of ZVS based quasi-resonant converter driven DC motor. <em>IJPAM Journal</em>, 117(15), 1071-1076.
+          <a class="pub-link" href="https://acadpubl.eu/jsi/2017-117-15/articles/15/87.pdf" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Manindher, K. G., Chandra, B. M., & Thummala, S. (2018). An optimized PQ control in wind energy connected grid system using STATCOM. <em>IJPAM Journal</em>, 118(5), 1311-1318.
+          <a class="pub-link" href="https://acadpubl.eu/jsi/2018-118-5/articles/5/102.pdf" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Thummala, S., Chandra, B. M., & Manindher, K. G. (2018). Thyristor power controlled fed domestic loads using microcontroller. <em>IJMERT Journal</em>, 5(2), 96-104.
+          <a class="pub-link" href="http://www.ijmert.org/Publications/IJMERT-Vol-5-Issue-3-0012.pdf" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Harish Sagar, N., & Chandra, B. M. (2018). Control of modular multilevel converters under singular unbalanced voltage conditions with equal positive and negative sequence components. <em>IJR Journal</em>, 7(VI), 174-184.
+          <a class="pub-link" href="https://ijrpublisher.com/index.php/volume-7-issue-6-june-2018/" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Thummala, S., & Chandra, B. M. (2018). A neuro fuzzy controller for load compensation of diesel generator in isolated generation system employing DSTATCOM. <em>IJTIR Journal</em>, 5(10), 23-29.
+          <a class="pub-link" href="https://www.scribd.com/document/808044470/A-Neuro-Fuzzy-Controller-for-Load" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Leela Vasavi, N., Naga Abhishek, M., Venkateswara Reddy, N., Pavan Teja, K., & Vamsi, G. (2019). Design and development of Bluetooth controlled robot using solar power. <em>Turkish Journal of Computer and Mathematics Education</em>, 10(2), 847-854.
+          <a class="pub-link" href="https://turcomat.org/index.php/turkbilmat/article/view/13350" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Sravani, B., Moulika, C., Sai Komali, D., Gayathri, P. V., & Prudhvi, M. (2019). Advanced health monitoring system development and implementation for real-time applications. <em>Turkish Journal of Computer and Mathematics Education</em>, 10(2), 841-846.
+          <a class="pub-link" href="https://turcomat.org/index.php/turkbilmat/article/view/13349" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Ajitha, C., Pavan Kumar, O., Abhishek, B., Sivamani, T. V., & Mamatha, C. (2019). Implementation of an automatic LPG gas detection and alert system. <em>Turkish Journal of Computer and Mathematics Education</em>, 10(2), 855-860.
+          <a class="pub-link" href="https://turcomat.org/index.php/turkbilmat/article/view/13351" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Venkata Prasanth, B., Srinivasa Rao, G., & Linga Rao, B. (2019). SEPIC-based harmonic distortion reduction in BLDC motors. <em>Turkish Journal of Computer and Mathematics Education</em>, 10(2), 861-867.
+          <a class="pub-link" href="https://turcomat.org/index.php/turkbilmat/article/view/13352" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chaitanya, T., Chandra, B. M., Venkata Prasanth, B., Ramana, B., & Veeranjaneyulu, M. (2019). A unique energy solution for sun arranged PV-driven SRM. <em>Turkish Journal of Computer and Mathematics Education</em>, 10(2), 868-874.
+          <a class="pub-link" href="https://turcomat.org/index.php/turkbilmat/article/view/13353" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Venkata Prasanth, B., Kalyan Krishnan, K., Srinivasa Rao, S., Ramesh, K. V., & Babu. (2019). Analysis of optimal power flow using hybrid fruit fly algorithm. <em>Turkish Journal of Computer and Mathematics Education</em>, 10(2), 899-904.
+          <a class="pub-link" href="https://turcomat.org/index.php/turkbilmat/article/download/13356/9546/23816" target="_blank" rel="noopener">Download</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Venkata Prasanth, B., Lakshmi Prasanna, K., & Srinivas, T. (2019). Mitigation of unbalanced voltages for islanded micro-grids by using five level diode clamped multilevel inverter. <em>Turkish Journal of Computer and Mathematics Education</em>, 10(2), 889-898.
+          <a class="pub-link" href="https://www.turcomat.org/index.php/turkbilmat/article/download/13355/9545/23814" target="_blank" rel="noopener">Download</a>
+        </li>
+
+        <li>
+          Venkata Prasanth, B., Chandra, B. M., Mallikarjuna, C., Sireesha, K. K., & Venkateswarlu, N. (2019). Analysis of practical constraints using hybrid cuckoo search algorithm. <em>Turkish Journal of Computer and Mathematics Education</em>, 10(2), 905-911.
+          <a class="pub-link" href="https://turcomat.org/index.php/turkbilmat/article/view/13357" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <!-- continue with items 34..74 similarly -->
+        <li>
+          Sunitha, T., Rama Devi, B., Swathi, A., Ashok, D., & Chandra, B. M. (2020). System for women security using IoT. <em>Mathematical Statistician and Engineering Applications</em>, 69(1), 279-290.
+          <a class="pub-link" href="https://www.philstat.org/index.php/MSEA/article/view/1591" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Naga Mani, D., Vaneesha, V., Immanuel, J., & Navya Sree, R. (2020). Utilizing IoT - A women's wearable safety device. <em>Mathematical Statistician and Engineering Applications</em>, 69(1), 380-385.
+          <a class="pub-link" href="https://www.philstat.org/index.php/MSEA/article/download/1691/1204/2946" target="_blank" rel="noopener">Download</a>
+        </li>
+
+        <li>
+          Anitha, C., & Chandra, B. M. (2021). A single-phase grid-connected photovoltaic inverter based on a three-switch three-port flyback with series power decoupling circuit. <em>JRMAT Journal</em>, 12(1), 271-275.
+        </li>
+
+        <li>
+          Chandra, B. M., Sharuk, S., Pavan Kumar, Y., Seshamma, N., Rizwana, S., & Pranesh Kumar, K. (2021). Modelling & performance analysis of push-pull resonant DC link converter under distinct loading conditions. <em>JOIACS Journal</em>, 11(2), 282-288.
+        </li>
+
+        <li>
+          Chandra, B. M., Srilakshmi, P., Narmada, A., Sowjanya, G., Praneeth Kumar, M., & R V N S Saran, S. (2021). Temperature based fan speed control and monitoring with Arduino. <em>IJAEMA Journal</em>, XIII(7), 1338-1344.
+          DOI: 18.0002.IJAEMA.2021.V13I7.200001.015685903148
+        </li>
+
+        <li>
+          Khannan, A. S., Thummala, S., & Chandra, B. M. (2021). Power quality improvement of utility grid tied DC/AC micro grid with DGR and converters using metaheuristic algorithms: A review. <em>IJERA Journal</em>, 11(2), 45-52.
+          <a class="pub-link" href="https://www.ijera.com/papers/vol11no2/Series-1/G1102014552.pdf" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Desam, S., Ambati, R., Saraswathi, Y., Cheethirala, M., Kancherla, M. R., & Kandukuri, B. (2021). Automatic irrigation system by sensing soil moisture in agricultural fields. <em>IJAEMA Journal</em>, XIII(6), 2818-2823.
+        </li>
+
+        <li>
+          Chandra, B. M., Manikanta, A., Ravi Teja, K., Venu, T., Rajasekhara Reddy, U., Vasanth Reddy, C., & Sandeep Reddy, D. (2021). IoT based smart fan regulator. <em>IJAEMA Journal</em>, XIII(7), 1748-1755.
+        </li>
+
+        <li>
+          Sharuk, S., Pavan Kumar, Y., Seshamma, N., Rizwana, S., & Chandra, B. M. (2021). Multiple NODE MCU integrated with a couple of sensors. <em>Levant Journal</em>, 20(7), 11-17.
+        </li>
+
+        <li>
+          Kannan, A. S., Thummala, S., & Chandra, B. M. (2021). Cost optimization of micro-grid of renewable energy resources connected with and without utility grid. <em>Turkish Journal of Computer and Mathematics Education</em>, 12(4), 282-291.
+          <a class="pub-link" href="https://turcomat.org/index.php/turkbilmat/article/view/506" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Prakash, A., Chandra, B. M., & Srikanth, T. (2021). An efficient navigation system for the visually impaired. <em>International Journal of Computational Intelligence in Control</em>, 13(1), 273-282.
+          <a class="pub-link" href="https://www.mukpublications.com/ijcic-v13-1-2021.php" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Venkata Prasanth, B., Chandra, B. M., & Raja Sathish Kumar. (2021). Voltage control of an AVR with tuned PID controller with ANT colony optimization. <em>International Journal of Computational Intelligence in Control</em>, 13(1), 283-297.
+          <a class="pub-link" href="https://www.mukpublications.com/ijcic-v13-1-2021.php" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Venkata Prasanth, B., Veeranjaneyulu, K., & Rajini, K. (2021). A fuel cell based SFCL for improving electric power system security and reducing fault currents. <em>International Journal of Computational Intelligence in Control</em>, 13(2), 775-781.
+          <a class="pub-link" href="https://www.mukpublications.com/ijcic-v13-2-2021.php" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Venkateswarlu, L., Chandra, B. M., Kiran Kumar, C., & Murthy, T. S. (2021). Advanced topology for nonlinear loads and compensation of reactive power. <em>International Journal of Computational Intelligence in Control</em>, 13(2), 753-763.
+          <a class="pub-link" href="https://www.mukpublications.com/ijcic-v13-2-2021.php" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Venkata Prasanth, B., Chandra, B. M., Kalyan Krishnan, K., & Mallikarjuna, C. (2021). TLBO algorithm for non-convex economic load dispatch considering losses. <em>International Journal of Computational Intelligence in Control</em>, 13(2), 745-752.
+        </li>
+
+        <li>
+          Chandra, B. M., Venkata Prasanth, B., Rajaselvan, C., & Manjunath, T. C. (2021). Switched capacitor inverter topology for photovoltaic applications. <em>International Journal of Computational Intelligence in Control</em>, 13(2), 737-744.
+          <a class="pub-link" href="https://www.mukpublications.com/ijcic-v13-2-2021.php" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Venkata Prasanth, B., Kotewsara Rao, D. V., & Anusha, A. (2021). Study of performance of dual stator induction motor. <em>International Journal of Computational Intelligence in Control</em>, 13(2), 729-736.
+          <a class="pub-link" href="https://www.mukpublications.com/ijcic-v13-2-2021.php" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Venkata Prasanth, B., Chandra, B. M., & Kumaraswamy, I. (2021). Rectifier load analysis for electric vehicle wireless charging system. <em>International Journal of Computational Intelligence in Control</em>, 13(2), 721-727.
+          <a class="pub-link" href="https://www.mukpublications.com/ijcic-v13-2-2021.php" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Venkata Prasanth, B., Chandra, B. M., Lakshmi Prasanna, K., & Aneesh, N. (2021). Fuzzy controlled multilevel inverter based MPPT controllable PV for grid connected applications. <em>International Journal of Computational Intelligence in Control</em>, 13(2), 713-720.
+        </li>
+
+        <li>
+          Chandra, B. M., Narasimha Rao, N., Sainadh Singh, K., & Venkata Prasanth, B. (2021). An innovative fast energy based fuzzy logic DC link voltage controller for three-phase DSTATCOM to correct AC loads. <em>International Journal of Computational Intelligence in Control</em>, 13(2), 703-712.
+          <a class="pub-link" href="https://www.mukpublications.com/ijcic-v13-2-2021.php" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Heena, S., Jayasri, T., Amulya, U., Asif, S., & Chandra, B. M. (2021). Extortion recognition in web-based item audit frameworks by means of heterogeneous graph transformer. <em>Mathematical Statistician and Engineering Applications</em>, 70(2), 433-439.
+          <a class="pub-link" href="https://www.philstat.org/index.php/MSEA/article/view/1708" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Mounika, P., Rani, V., Sushma, P., & Sneha Latha, G. (2022). Embedded solar tracking system using Arduino. <em>South Asian Journal of Engineering and Technology</em>, 12(2), 1-10.
+          <a class="pub-link" href="https://sajet.in/index.php/journal/article/view/198" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Ajitha, C., Pavan Kumar, O., Abhishek, B., Venkata Siva Mani, T., & Mamatha, C. (2022). Foot step power generation using piezoelectric sensors. <em>South Asian Journal of Engineering and Technology</em>, 12(2), 11-20.
+          <a class="pub-link" href="https://sajet.in/index.php/journal/article/view/208" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Sravani, B., Moulika, C., & Sai Sri Komali, D. (2022). Touchless doorbell for post-COVID. <em>South Asian Journal of Engineering and Technology</em>, 12(2), 21-30.
+          <a class="pub-link" href="https://sajet.in/index.php/journal/article/view/209" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Gopisetty, S., & Chandra, B. M. (2022). Installation of a charging station for electric vehicles using solar photovoltaics, batteries, and diesel generators. <em>Industrial Engineering Journal</em>, 15(12), 470-477.
+        </li>
+
+        <li>
+          Kareti, A., & Chandra, B. M. (2022). An adaptive dual-battery hybrid electric vehicles' DC-to-DC (or BDC) converters under development. <em>Industrial Engineering Journal</em>, 15(12), 453-461.
+        </li>
+
+        <li>
+          Chandra, B. M., Kishore Kumar, T., Pavan Kumar, T., & Narasimha Rao, N. (2022). Residential distribution system harmonic mitigation using PV interfacing inverter. <em>Mathematical Statistician and Engineering Applications</em>, 71(4), 9917–9929.
+          <a class="pub-link" href="https://www.philstat.org/index.php/MSEA/article/download/1809/1310/3170" target="_blank" rel="noopener">Download</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Venkata Prasanth, B., & Subbarami Reddy, C. (2022). Individual pitch control of variable speed wind turbines using DFIG and fuzzy logic controllers to reduce flicker. <em>Mathematical Statistician and Engineering Applications</em>, 71(4), 9930–9943.
+          <a class="pub-link" href="https://www.philstat.org/index.php/MSEA/article/view/1810" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Muqthiar Ali, S., Sreenivasa Murthy, T., & Shankar, R. (2022). Power transfer matrix model and SVPWM technique based multi-variable control method for DFIG wind energy system. <em>Mathematical Statistician and Engineering Applications</em>, 71(4), 9944-9955.
+          <a class="pub-link" href="https://www.philstat.org/index.php/MSEA/article/view/1811/1312" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Venkata Prasanth, B., Prasanth, A., & Koteswara Rao, D. V. (2022). Induction drive speed control using a neuro-fuzzy controller. <em>Mathematical Statistician and Engineering Applications</em>, 71(4), 9956-9966.
+          <a class="pub-link" href="https://www.philstat.org/index.php/MSEA/article/view/1812/1313" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Krishna Kishore, J., Srinivasa Rao, J., & Mallikarjuna, C. (2022). Voltage and frequency control of isolated hybrid power systems. <em>Mathematical Statistician and Engineering Applications</em>, 71(4), 9967-9976.
+          <a class="pub-link" href="https://www.philstat.org/index.php/MSEA/article/download/1813/1314/3178" target="_blank" rel="noopener">Download</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Venkata Prasanth, B., Sathish Kumar, R., & Lakshmi Prasanna, M. (2022). A new method for reducing voltage sag using interline dynamic voltage restorer. <em>Mathematical Statistician and Engineering Applications</em>, 71(4), 9977-9986.
+          <a class="pub-link" href="https://www.philstat.org/index.php/MSEA/article/view/1814" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Venkata Prasanth, B., Krishnaraj, N., Rajselvan, C., & Anusha, A. (2022). Generalized UPFC with 48-pulse GTO based voltage source converter to improve power quality. <em>Mathematical Statistician and Engineering Applications</em>, 71(4), 9987-9997.
+          <a class="pub-link" href="https://www.philstat.org/index.php/MSEA/article/view/1815" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Venkata Prasanth, B., Chandru Vignesh, C., Sangu, R., & Prasad, D. (2022). Economic load dispatch problem using PSO. <em>Mathematical Statistician and Engineering Applications</em>, 71(4), 9998-10007.
+          <a class="pub-link" href="https://www.philstat.org/index.php/MSEA/article/view/1816" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Venkata Prasanth, B., Tara Kalyani, S., & Venkateswarlu, L. (2022). Application of battery energy storage DVR for voltage sag/swell mitigation in induction motor drive applications. <em>Mathematical Statistician and Engineering Applications</em>, 71(4), 10008-10020.
+          <a class="pub-link" href="https://www.philstat.org/index.php/MSEA/article/view/1817" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Venkata Prasanth, B., Chandra, B. M., Tara Kalyani, S., & Prakash, A. (2022). Autonomous harmonic compensation in a multi-bus micro-grid interfacing converters through fuzzy logic control. <em>Mathematical Statistician and Engineering Applications</em>, 71(4), 10021-10036.
+          <a class="pub-link" href="https://www.philstat.org/index.php/MSEA/article/view/1818" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Venkata Prasanth, B., Syed, A., & Prakash, Y. (2022). Power control in a hybrid isolated power system with better power quality. <em>Mathematical Statistician and Engineering Applications</em>, 71(4), 10037-10046.
+          <a class="pub-link" href="https://www.philstat.org/index.php/MSEA/article/view/1819" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Venkata Prasanth, B., Syed, A., & Lakshmi Narayanan, T. P. (2022). MVA-Km method and genetic algorithm for a comprehensive transmission cost allocation by AC power flow. <em>Mathematical Statistician and Engineering Applications</em>, 71(4), 10047-10057.
+          <a class="pub-link" href="https://www.philstat.org/index.php/MSEA/article/view/1820" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Chandra, B. M., Venkata Prasanth, B., Lakshmi Narayana, P., & Nagaraju, N. (2022). Hybrid differential algorithm of linear and non-linear systems for PID controller optimization. <em>Mathematical Statistician and Engineering Applications</em>, 71(4), 10105-10121.
+          <a class="pub-link" href="https://www.philstat.org/index.php/MSEA/article/view/1825" target="_blank" rel="noopener">Link</a>
+        </li>
+
+        <li>
+          Praveen Kumar, V. V. S., Reddy, D. V., Lavanya, J., Kavya, K., Swetha, U., & Chandra, B. M. (2023). Smart optimization of fault diagnosis in electrical grid using distributed software-defined IoT system. <em>Madhya Bharti</em>, 83(4), 90-96.
+        </li>
+
+        <li>
+          Chandra, B. M., & Bhargavi, K. (2023). Primary frequency EV aggregation implementing grid regulation and charger controller for controlling the operations of an industrial micro-grid. <em>Journal of Industrial and Computational Research</em>, 15(8), 440-449.
+          DOI: 10.0002/JICR 2023.V15I8.008301.3171237345229
+        </li>
+      </ol>
+    </section>
+
+    <p style="margin-top:26px; color:#6b7280; font-size:13px;">If you want, I can:</p>
+    <ul style="color:#6b7280; font-size:13px;">
+      <li>Convert this list into a downloadable CSV / BibTeX file for import into Google Scholar / Mendeley / ORCID.</li>
+      <li>Add a “Proof / PDF” column so you can upload journal PDFs and link them (similar to the Research page).</li>
+      <li>Generate a compact printable version (Word/HTML) for CV insertion.</li>
+    </ul>
+  </div>
+</body>
+</html>
