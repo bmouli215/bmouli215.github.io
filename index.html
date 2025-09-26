@@ -84,15 +84,19 @@
     }
     .cv-btn:hover{filter:brightness(.95);}
 
-    /* profile links (icons) */
+    /* profile links (small text like address font, no images) */
     .profiles{
-      margin-top:10px; display:flex; gap:12px; align-items:center;
+      margin-top:10px;
+      font-size:12px;            /* small font */
+      color:var(--muted);
     }
-    .profiles a img{
-      width:28px; height:28px; object-fit:contain;
-      transition:transform .2s ease;
+    .profiles a{
+      color:var(--ribbon2);
+      font-weight:700;
+      text-decoration:none;
+      margin-right:10px;
     }
-    .profiles a:hover img{transform:scale(1.15);}
+    .profiles a:hover{ text-decoration:underline; }
 
     /* right column: education image + quote */
     .right-col{
@@ -121,39 +125,6 @@
     }
     .thought h3{margin-top:0; color:var(--ribbon1);}
     .thought p{font-size:15px; color:var(--muted); line-height:1.6;}
-
-    /* Research projects */
-    #research-projects{
-      margin-top:28px;
-    }
-    #research-projects h3{
-      color:var(--ribbon1); margin:0 0 12px 0;
-    }
-    .projects-grid{
-      display:grid;
-      gap:14px;
-      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-      margin-top:12px;
-    }
-    .project-card{
-      background:var(--card); border-radius:10px; padding:14px;
-      box-shadow:0 8px 20px rgba(4,58,99,.06);
-      display:flex; flex-direction:column; gap:8px;
-    }
-    .project-card h4{margin:0; color:var(--ribbon2); font-size:16px;}
-    .meta{font-size:13px; color:var(--muted);}
-    .meta strong{color:#333}
-    .project-card p.desc{font-size:14px; color:#333; margin:6px 0 0 0; line-height:1.4}
-    .project-actions{margin-top:auto; display:flex; gap:10px; align-items:center;}
-    .btn-outline{
-      padding:8px 12px; border-radius:8px; text-decoration:none;
-      border:1px solid var(--ribbon2); color:var(--ribbon2); font-weight:700; font-size:13px;
-    }
-    .btn-primary{
-      padding:8px 12px; border-radius:8px; text-decoration:none;
-      background:var(--ribbon2); color:#fff; font-weight:700; font-size:13px;
-      box-shadow:0 4px 12px rgba(11,102,168,.12);
-    }
 
     /* Responsive */
     @media (max-width:960px){
@@ -193,7 +164,7 @@
     </nav>
   </aside>
 
-  <!-- MAIN DASHBOARD -->
+  <!-- MAIN DASHBOARD (research section removed) -->
   <main class="main">
     <div class="profile-card">
       <!-- LEFT: avatar + details -->
@@ -208,17 +179,11 @@
           <p class="research">Research: Power Electronics, FACTS, FPGA Controllers, Renewable Energy, EVs, Smart Grids</p>
           <a class="cv-btn" href="CV_Dr Mouli Chandra.pdf">Download CV (PDF)</a>
 
-          <!-- Profile IDs with icons -->
+          <!-- Profile IDs as small text links (no icons) -->
           <div class="profiles">
-            <a href="https://scholar.google.com/citations?user=OStYD4YAAAAJ&hl=en" target="_blank">
-              <img src="scholar.png" alt="Google Scholar">
-            </a>
-            <a href="https://orcid.org/0000-0002-XXXX-YYYY" target="_blank">
-              <img src="orcid.png" alt="ORCID">
-            </a>
-            <a href="https://www.scopus.com/authid/detail.uri?authorId=1234567890" target="_blank">
-              <img src="scopus.png" alt="Scopus">
-            </a>
+            <a href="https://scholar.google.com/citations?user=OStYD4YAAAAJ&hl=en" target="_blank">Google Scholar</a> |
+            <a href="https://orcid.org/0000-0002-XXXX-YYYY" target="_blank">ORCID</a> |
+            <a href="https://www.scopus.com/authid/detail.uri?authorId=1234567890" target="_blank">Scopus</a>
           </div>
         </div>
       </div>
@@ -244,27 +209,7 @@
       </p>
     </div>
 
-    <!-- Research Projects & Grants -->
-    <section id="research-projects">
-      <h3>Research Projects & Grants</h3>
-      <div class="projects-grid">
-        <article class="project-card">
-          <h4>Autonomous Fire-Suppression System for Railways</h4>
-          <div class="meta"><strong>Agency:</strong> Railway Research Board • <strong>Value:</strong> ₹ 18,00,000</div>
-          <p class="desc">Prototype for early fire detection and suppression in railway coaches.</p>
-        </article>
-        <article class="project-card">
-          <h4>FPGA-Based FACTS Controller for Grid Stability</h4>
-          <div class="meta"><strong>Agency:</strong> DST-SERB • <strong>Value:</strong> ₹ 12,50,000</div>
-          <p class="desc">Fast-acting FPGA controllers for grid voltage stability improvement.</p>
-        </article>
-        <article class="project-card">
-          <h4>EV Charger Integration with Renewable Microgrids</h4>
-          <div class="meta"><strong>Agency:</strong> Industry Collaboration • <strong>Value:</strong> ₹ 14,70,000</div>
-          <p class="desc">Smart controllers for PV-based EV charging integration.</p>
-        </article>
-      </div>
-    </section>
+    <!-- Note: Research Projects & Grants section removed from main area as requested -->
   </main>
 </body>
 </html>
