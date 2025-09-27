@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Research Projects & Grants - Dr. B. Mouli Chandra</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css"> <!-- keep same stylesheet -->
+</head>
+<body>
+  <header>
+    <div class="brand">Dr. B. Mouli Chandra</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html" class="active">Research Projects & Grants</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="thought">
+      <h3>Research Projects & Grants</h3>
+      <table style="width:100%; border-collapse:collapse; font-size:15px; line-height:1.8;">
+        <thead>
+          <tr style="text-align:left; border-bottom:1px solid #ccc;">
+            <th style="padding:6px;">Year</th>
+            <th style="padding:6px;">Project / Scheme</th>
+            <th style="padding:6px;">Funding Agency</th>
+            <th style="padding:6px;">Amount (₹)</th>
+            <th style="padding:6px;">View</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:6px;">2016</td>
+            <td>SERB Project</td>
+            <td>Dept. of Science & Technology</td>
+            <td>24,15,600</td>
+            <td><a href="#">View</a></td>
+          </tr>
+          <tr>
+            <td style="padding:6px;">2017</td>
+            <td>MODROBS Project</td>
+            <td>AICTE</td>
+            <td>15,29,000</td>
+            <td><a href="#">View</a></td>
+          </tr>
+          <tr>
+            <td style="padding:6px;">2018</td>
+            <td>Research Promotional Scheme</td>
+            <td>AICTE</td>
+            <td>12,80,392</td>
+            <td><a href="#">View</a></td>
+          </tr>
+          <tr>
+            <td style="padding:6px;">2019</td>
+            <td>FIST Level O</td>
+            <td>Dept. of Science & Technology</td>
+            <td>40,00,000</td>
+            <td><a href="#">View</a></td>
+          </tr>
+          <tr>
+            <td style="padding:6px;">2020</td>
+            <td>IDEA LABS</td>
+            <td>AICTE</td>
+            <td>1,02,00,000</td>
+            <td><a href="#">View</a></td>
+          </tr>
+          <tr>
+            <td style="padding:6px;">2025</td>
+            <td>Matching Grant</td>
+            <td>Taylor University, Malaysia</td>
+            <td>12,00,000</td>
+            <td><a href="#">View</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dr. B. Mouli Chandra</p>
+  </footer>
+</body>
+</html>
