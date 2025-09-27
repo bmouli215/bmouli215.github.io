@@ -17,8 +17,27 @@
       font-size: 20px;
       color: #1a2b3a;
     }
-    table th, table td {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    th, td {
       padding: 10px;
+      border-bottom: 1px solid #e5e5e5;
+      text-align: left;
+    }
+    th {
+      color: #555;
+    }
+    td.salary {
+      font-size: 14px;
+      color: #444;
+    }
+    td.view a {
+      color: #0b66a8;
+      font-weight: 600;
     }
   </style>
 </head>
@@ -30,45 +49,37 @@
   <main class="main">
     <section class="thought">
       <h3>Professional Experience</h3>
-      <table style="width:100%; border-collapse:collapse; font-size:15px; line-height:1.8;">
+      <table>
         <thead>
-          <tr style="text-align:left; border-bottom:1px solid #ccc;">
+          <tr>
             <th>Institution</th>
             <th>Role</th>
-            <th>Dates of Experience</th>
-            <th>Pay Scale</th>
-            <th>AGP</th>
-            <th>Basic & Gross Pay</th>
+            <th>Period</th>
+            <th>Salary Details</th>
             <th>Proof</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>KSRM College of Engineering, Kadapa, A.P., India</td>
-            <td>Regular Assistant Professor</td>
-            <td>June 26, 2005 – Dec 19, 2015</td>
-            <td>₹15,600 – ₹39,100</td>
-            <td>₹6,000</td>
-            <td>₹49,500 (last salary)</td>
-            <td><a href="#">View</a></td>
+            <td>KSRM College of Engineering, Kadapa</td>
+            <td>Assistant Professor</td>
+            <td>2005 – 2015</td>
+            <td class="salary">₹15,600–39,100, AGP ₹6,000<br>Last Pay: ₹49,500</td>
+            <td class="view"><a href="#">View</a></td>
           </tr>
           <tr>
-            <td>QIS College of Engineering and Technology, A.P., India</td>
+            <td>QIS College of Engineering & Technology</td>
             <td>Associate Professor</td>
-            <td>Dec 21, 2015 – June 6, 2018</td>
-            <td>₹37,400 – ₹67,000</td>
-            <td>₹10,000</td>
-            <td>₹93,149 (last salary)</td>
-            <td><a href="#">View</a></td>
+            <td>2015 – 2018</td>
+            <td class="salary">₹37,400–67,000, AGP ₹10,000<br>Last Pay: ₹93,149</td>
+            <td class="view"><a href="#">View</a></td>
           </tr>
           <tr>
-            <td>QIS College of Engineering and Technology, A.P., India</td>
-            <td>Professor and Head of Department</td>
-            <td>Dec 21, 2015 – Present</td>
-            <td>₹37,400 – ₹67,000</td>
-            <td>₹10,000</td>
-            <td>₹1,41,541 (last salary)</td>
-            <td><a href="#">View</a></td>
+            <td>QIS College of Engineering & Technology</td>
+            <td>Professor & Head</td>
+            <td>2015 – Present</td>
+            <td class="salary">₹37,400–67,000, AGP ₹10,000<br>Current Pay: ₹1,41,541</td>
+            <td class="view"><a href="#">View</a></td>
           </tr>
         </tbody>
       </table>
