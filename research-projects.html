@@ -1,83 +1,142 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Research Projects & Grants - Dr. B. Mouli Chandra</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="style.css"> <!-- Same CSS as index -->
+  <style>
+    /* Page basics */
+    :root{
+      --text:#1a2b3a;
+      --muted:#6b7a86;
+      --accent:#0b66a8;
+      --bg:#fbfcfe;
+      --card:#ffffff;
+      --divider:#e9eef4;
+    }
+    html,body{height:100%; margin:0; font-family: "Helvetica Neue", Arial, sans-serif; color:var(--text); background:var(--bg);}
+    a{color:var(--accent); text-decoration:none;}
+    a:hover{text-decoration:underline;}
+
+    /* Header with centered brand and nav */
+    header{background:#fff; border-bottom:1px solid var(--divider); padding:28px 0 18px; text-align:center;}
+    .brand { font-weight:700; font-size:20px; color:var(--text); margin-bottom:6px; }
+    nav{display:flex; justify-content:center; gap:28px; margin-top:6px;}
+    nav a{color:var(--muted); font-weight:600; font-size:15px; padding:6px 4px;}
+    nav a.active, nav a:hover{color:var(--accent);}
+
+    /* Main container */
+    .container{max-width:1060px; margin:36px auto; padding:0 18px;}
+    .card{background:var(--card); border-radius:6px; padding:30px; box-shadow:0 6px 20px rgba(20,40,60,0.04);}
+
+    h1{margin:0 0 22px; font-size:26px; color:var(--text);}
+
+    /* Table styling */
+    .projects-table{width:100%; border-collapse:collapse; font-size:15px;}
+    .projects-table thead th{ text-align:left; padding:14px 12px; color:var(--muted); font-weight:700; border-bottom:1px solid var(--divider); }
+    .projects-table tbody td{ padding:18px 12px; vertical-align:top; border-bottom:1px solid #f1f5f9; color:var(--text); }
+    .projects-table tbody tr:last-child td{ border-bottom:none; }
+    .projects-table tbody td.amount{ text-align:right; font-weight:600; color:var(--text); white-space:nowrap; }
+    .projects-table tbody td.role{ color:var(--muted); }
+    .projects-table tbody td.view{ text-align:right; }
+    .projects-table tbody td.view a{ color:var(--accent); font-weight:600; }
+
+    /* responsive */
+    @media (max-width:900px){
+      .projects-table thead th:nth-child(3), .projects-table td:nth-child(3){ display:none; } /* hide Agency column on small screens */
+      .projects-table thead th:nth-child(4), .projects-table td:nth-child(4){ display:none; } /* hide Role column on small */
+      .projects-table tbody td{ padding:12px; font-size:14px; }
+    }
+  </style>
 </head>
 <body>
   <header>
     <div class="brand">Dr. B. Mouli Chandra</div>
     <nav>
       <a href="index.html">Home</a>
+      <a href="about.html">About</a>
       <a href="research.html" class="active">Research Projects & Grants</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main class="main">
-    <section class="thought">
-      <h3>Research Projects & Grants</h3>
-      <table style="width:100%; border-collapse:collapse; font-size:15px; line-height:1.8;">
+  <main class="container">
+    <div class="card">
+      <h1>Research Projects & Grants</h1>
+
+      <table class="projects-table" aria-label="Research Projects and Grants">
         <thead>
-          <tr style="text-align:left; border-bottom:1px solid #ccc;">
-            <th style="padding:6px;">Year</th>
-            <th style="padding:6px;">Project / Scheme</th>
-            <th style="padding:6px;">Funding Agency</th>
-            <th style="padding:6px;">Amount (₹)</th>
-            <th style="padding:6px;">View</th>
+          <tr>
+            <th style="width:80px">Year</th>
+            <th>Project / Scheme</th>
+            <th style="width:260px">Agency</th>
+            <th style="width:220px">Role</th>
+            <th style="width:150px; text-align:right">Amount (₹)</th>
+            <th style="width:90px">Proof</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td style="padding:6px;">2016</td>
+            <td>2016</td>
             <td>SERB Project</td>
             <td>Dept. of Science & Technology</td>
-            <td>24,15,600</td>
-            <td><a href="#">View</a></td>
+            <td class="role">Principal Investigator</td>
+            <td class="amount">24,15,600</td>
+            <td class="view"><a href="#" title="Upload proof later">View</a></td>
           </tr>
+
           <tr>
-            <td style="padding:6px;">2017</td>
+            <td>2017</td>
             <td>MODROBS Project</td>
             <td>AICTE</td>
-            <td>15,29,000</td>
-            <td><a href="#">View</a></td>
+            <td class="role">Principal Investigator</td>
+            <td class="amount">15,29,000</td>
+            <td class="view"><a href="#">View</a></td>
           </tr>
+
           <tr>
-            <td style="padding:6px;">2018</td>
+            <td>2018</td>
             <td>Research Promotional Scheme</td>
             <td>AICTE</td>
-            <td>12,80,392</td>
-            <td><a href="#">View</a></td>
+            <td class="role">Principal Investigator</td>
+            <td class="amount">12,80,392</td>
+            <td class="view"><a href="#">View</a></td>
           </tr>
+
           <tr>
-            <td style="padding:6px;">2019</td>
-            <td>FIST Level O</td>
+            <td>2019</td>
+            <td>FIST Level O Project</td>
             <td>Dept. of Science & Technology</td>
-            <td>40,00,000</td>
-            <td><a href="#">View</a></td>
+            <td class="role">Principal Investigator</td>
+            <td class="amount">40,00,000</td>
+            <td class="view"><a href="#">View</a></td>
           </tr>
+
           <tr>
-            <td style="padding:6px;">2020</td>
+            <td>2020</td>
             <td>IDEA LABS</td>
             <td>AICTE</td>
-            <td>1,02,00,000</td>
-            <td><a href="#">View</a></td>
+            <td class="role">Principal Investigator</td>
+            <td class="amount">1,02,00,000</td>
+            <td class="view"><a href="#">View</a></td>
           </tr>
+
           <tr>
-            <td style="padding:6px;">2025</td>
+            <td>2025</td>
             <td>Matching Grant</td>
             <td>Taylor University, Malaysia</td>
-            <td>12,00,000</td>
-            <td><a href="#">View</a></td>
+            <td class="role">Principal Investigator</td>
+            <td class="amount">12,00,000</td>
+            <td class="view"><a href="#">View</a></td>
           </tr>
         </tbody>
       </table>
-    </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Dr. B. Mouli Chandra</p>
-  </footer>
+    </div>
+
+    <p style="text-align:center; color:var(--muted); margin-top:22px;">© 2025 Dr. B. Mouli Chandra</p>
+  </main>
 </body>
 </html>
